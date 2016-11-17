@@ -1,0 +1,9 @@
+- 2012 file has vice president in the party field
+- 2012 file has inconsistent raw names
+- 2000 file has PRESIDENT and president
+- 2000 not sure what to do with the absentee provisionals. Should they be added in?
+- 2000 requires universal newline mode
+- 2000 Duplicate county entries in the presidential results with the election day and absentee recurring unlabled
+- 2008 inconsistent casing of Totals versus TOTAL
+- 2008 inconsistent UnderVote, UNDER VOTE
+- 2004 missing under and over vote
