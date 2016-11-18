@@ -47,6 +47,8 @@ class Standardizer(object):
                     'grand_total': 0,
                 }
 
+        print len(county_dict)
+
         other_list = []
         for row in self.raw_presidential:
             v = int(row['votes'])
@@ -144,16 +146,13 @@ class Standardize2004(Standardizer):
 class Standardize2008(Standardizer):
     in_file = "20081104__ia__general__county.csv"
     out_file = "2008.csv"
-    total_names = ['TOTAL', 'Totals', 'Total']
+    total_names = ['TOTAL',]
     dem_names = ['BARACK OBAMA / JOE BIDEN']
     gop_names = ['JOHN MCCAIN / SARAH PALIN']
     novote_names = [
         'OVER VOTES',
         'UNDER VOTES',
         'SCATTERING',
-        'OverVote',
-        'UnderVote',
-        'Scattering',
     ]
     real_dem_total = 828940
     real_gop_total = 682379
@@ -173,9 +172,9 @@ class Standardize2012(Standardizer):
 
 
 def main():
-    Standardize2000()
-    Standardize2004()
-    Standardize2008()
+    #Standardize2000()
+    #Standardize2004()
+    #Standardize2008()
     Standardize2012()
 
 
