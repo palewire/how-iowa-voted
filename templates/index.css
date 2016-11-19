@@ -62,6 +62,9 @@ section.leaderboard .dem {
     text-decoration: none;
     border-bottom: 2px solid #047BC0;
 }
+svg.map {
+    margin-top: 10px;
+}
 .dropshadow {
   fill: #ddd;
   stroke: #fff;

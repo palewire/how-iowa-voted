@@ -205,19 +205,19 @@ class Standardize2008(Standardizer):
     ]
     real_dem_total = 828940
     real_gop_total = 682379
-    real_grand_total = 1543662
+    real_grand_total = 1543965
 
 
 class Standardize2012(Standardizer):
     in_file = "20121106__ia__general__county.csv"
     out_file = "2012.csv"
-    total_names = ['Total']
+    total_names = ['Total', 'TOTAL']
     dem_names = ['Barack Obama', 'Barack Obama / Joe Biden']
     gop_names = ['Mitt Romney', 'Mitt Romney / Paul Ryan']
     novote_names = ['Over Votes', 'Under Votes']
     real_dem_total = 822544
     real_gop_total = 730617
-    real_grand_total = 1589899
+    real_grand_total = 1543662
 
 
 class Standardize2016(Standardizer):
@@ -233,10 +233,10 @@ class Standardize2016(Standardizer):
 
 
 def main():
-    Standardize2000()
-    Standardize2004()
+    #Standardize2000()
+    #Standardize2004()
     Standardize2008()
-    Standardize2012()
+    #Standardize2012()
 
 
 if __name__ == "__main__":
