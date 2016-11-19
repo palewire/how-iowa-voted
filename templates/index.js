@@ -93,7 +93,7 @@ app.createMap = function (race) {
 
     var leaderboard = section.append("section")
       .attr("class", "leaderboard")
-      .html("LEADERBOARD GOES HERE");
+      .html(_.template(d3.select("#leaderboard-tmpl").html())(race));
 
     var svg = app.createSvg(section);
     svg.append("g")

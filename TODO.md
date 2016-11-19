@@ -9,3 +9,4 @@
 - [ ] Bubble key and party legends
 - [ ] Top line results for each race
 - [ ] ring note annotations
+- [ ] Table below the map with all the county results
