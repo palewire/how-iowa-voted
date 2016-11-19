@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
-section {
-    margin: 30px auto;
-    text-align: center;
-}
-.dropshadow {
-  fill: #ddd;
-  stroke: #fff;
-  stroke-width: .5px;
-  filter: url(#drop-shadow);
-}
-.county {
-    fill: #f8f8f8;
-    stroke: #c7c7c7;
-    stroke-width: .25px;
-}
-.bubbles circle {
-    fill-opacity: .9;
-}
-.bubbles .gop {
-    fill: #DC4E54;
-}
-.bubbles .dem {
-    fill: #047BC0;
-}
+    {% include "index.css" %}
 </style>
 <body>
+    <article>
+        <header>
+            <h1>Iowa presidential results</h1>
+            <div class="byline">
+                By <a href="http://palewi.re/who-is-ben-welsh/">Ben Welsh</a>
+                &#8226;
+                Nov. 19, 2016
+            </div>
+        </header>
+        <section id="maps"></section>
+    </article>
+</body>
 <script src="/static/underscore-min.js"></script>
 <script src="/static/d3.v3.min.js"></script>
 <script src="/static/topojson.v1.min.js"></script>

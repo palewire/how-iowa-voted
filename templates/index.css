@@ -1,0 +1,37 @@
+article {
+    max-width: 960px;
+    margin: 30px auto;
+    font-family: sans;
+}
+header {
+    margin: 0 0 30px 0;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.1em;
+}
+div.byline, div.dateline {
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+section {}
+.dropshadow {
+  fill: #ddd;
+  stroke: #fff;
+  stroke-width: .5px;
+  filter: url(#drop-shadow);
+}
+.county {
+    fill: #f8f8f8;
+    stroke: #c7c7c7;
+    stroke-width: .25px;
+}
+.bubbles circle {
+    fill-opacity: .9;
+}
+.bubbles .gop {
+    fill: #DC4E54;
+}
+.bubbles .dem {
+    fill: #047BC0;
+}
