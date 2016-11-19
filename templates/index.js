@@ -33,7 +33,7 @@ app.createRadius = function(values) {
 app.createSvg = function () {
     var svg = d3.select("section#maps")
       .append("section")
-        .attr("class", "map")
+        .attr("class", "cycle")
       .append("svg")
         .attr("width", 960)
         .attr("height", 625);
