@@ -1,0 +1,101 @@
+{
+    "19073": {
+        "leader_total": 4760, 
+        "grand_total": 9782, 
+        "gop_total": 4760, 
+        "name": "Greene", 
+        "dem_total": 4750, 
+        "novote_total": 90, 
+        "margin": 10, 
+        "leader": "gop", 
+        "other_total": 182
+    }, 
+    "19049": {
+        "leader_total": 41976, 
+        "grand_total": 76368, 
+        "gop_total": 41976, 
+        "name": "Dallas", 
+        "dem_total": 33152, 
+        "novote_total": 136, 
+        "margin": 8824, 
+        "leader": "gop", 
+        "other_total": 1104
+    }, 
+    "19121": {
+        "leader_total": 9276, 
+        "grand_total": 17018, 
+        "gop_total": 9276, 
+        "name": "Madison", 
+        "dem_total": 7260, 
+        "novote_total": 102, 
+        "margin": 2016, 
+        "leader": "gop", 
+        "other_total": 380
+    }, 
+    "19193": {
+        "leader_total": 44604, 
+        "grand_total": 90584, 
+        "gop_total": 43682, 
+        "name": "Woodbury", 
+        "dem_total": 44604, 
+        "novote_total": 546, 
+        "margin": 922, 
+        "leader": "dem", 
+        "other_total": 1752
+    }, 
+    "19097": {
+        "leader_total": 11814, 
+        "grand_total": 20660, 
+        "gop_total": 8354, 
+        "name": "Jackson", 
+        "dem_total": 11814, 
+        "novote_total": 176, 
+        "margin": 3460, 
+        "leader": "dem", 
+        "other_total": 316
+    }, 
+    "19169": {
+        "leader_total": 52384, 
+        "grand_total": 94530, 
+        "gop_total": 39336, 
+        "name": "Story", 
+        "dem_total": 52384, 
+        "novote_total": 230, 
+        "margin": 13048, 
+        "leader": "dem", 
+        "other_total": 2580
+    }, 
+    "19025": {
+        "leader_total": 5782, 
+        "grand_total": 10536, 
+        "gop_total": 5782, 
+        "name": "Calhoun", 
+        "dem_total": 4476, 
+        "novote_total": 76, 
+        "margin": 1306, 
+        "leader": "gop", 
+        "other_total": 202
+    }, 
+    "19001": {
+        "leader_total": 4228, 
+        "grand_total": 8040, 
+        "gop_total": 4228, 
+        "name": "Adair", 
+        "dem_total": 3580, 
+        "novote_total": 48, 
+        "margin": 648, 
+        "leader": "gop", 
+        "other_total": 184
+    }, 
+    "19145": {
+        "leader_total": 8696, 
+        "grand_total": 14218, 
+        "gop_total": 8696, 
+        "name": "Page", 
+        "dem_total": 5226, 
+        "novote_total": 60, 
+        "margin": 3470, 
+        "leader": "gop", 
+        "other_total": 236
+    }
+}

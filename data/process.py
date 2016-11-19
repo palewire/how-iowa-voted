@@ -1,5 +1,8 @@
 import os
 import csv
+import json
+import copy
+import calculate
 from pprint import pprint
 
 
@@ -16,6 +19,12 @@ class Standardizer(object):
         print "Running {}".format(self.__class__.__name__)
         self.in_path = os.path.join(self.data_dir, self.in_file)
         self.out_path = os.path.join(self.data_dir, self.out_file)
+        self.json_path = os.path.join(
+            self.data_dir,
+            os.pardir,
+            "static",
+            self.out_file.replace("csv", "json")
+        )
         self.reader = list(csv.DictReader(open(self.in_path, 'rbU')))
         self.raw_presidential = self.filter()
         self.clean_presidential = self.regroup()
@@ -78,18 +87,58 @@ class Standardizer(object):
             self.out_path
         )
         writer = csv.DictWriter(open(self.out_path, 'wb'), fieldnames=[
-            'county',
+            'fips',
+            'name',
             'dem_total',
             'gop_total',
             'other_total',
             'novote_total',
             'grand_total',
+            'leader',
+            'leader_total',
+            'margin'
         ])
         writer.writeheader()
         sorted_data = sorted(self.clean_presidential.items(), key=lambda x:x[0])
+        fips_dict = dict(
+            (d['name'].upper(), d['state'] + d['county'])
+                for d in csv.DictReader(open(os.path.join(self.data_dir, 'fips.csv'), 'rbU'))
+        )
+        json_dict = {}
         for name, data in sorted_data:
-            data.update({'county': name})
+            data.update({'name': name})
+            fips = fips_dict[name.upper()]
+            data.update({
+                'margin': calculate.margin_of_victory(
+                    [data['dem_total'], data['gop_total']]
+                )
+            })
+            if data['dem_total'] > data['gop_total']:
+                data.update({
+                    'leader': 'dem',
+                    'leader_total': data['dem_total'],
+                })
+            elif data['dem_total'] < data['gop_total']:
+                data.update({
+                    'leader': 'gop',
+                    'leader_total': data['gop_total'],
+                })
+            elif data['dem_total'] == data['gop_total']:
+                data.update({
+                    'leader': 'tie',
+                    'leader_total': 0,
+                })
+
+            json_dict[fips] = copy.deepcopy(data)
+
+            data.update({'fips': fips})
             writer.writerow(data)
+
+        print "- Writing {} rows to {}".format(
+            len(self.clean_presidential),
+            self.json_path
+        )
+        json.dump(json_dict, open(self.json_path, 'wb'), indent=4)
 
     def analyze(self):
         total_dict = dict(
@@ -172,9 +221,9 @@ class Standardize2012(Standardizer):
 
 
 def main():
-    #Standardize2000()
-    #Standardize2004()
-    #Standardize2008()
+    Standardize2000()
+    Standardize2004()
+    Standardize2008()
     Standardize2012()
 
 

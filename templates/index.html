@@ -5,85 +5,33 @@ section {
     margin: 30px auto;
     text-align: center;
 }
-.county {
-    fill: #f7f7f7;
-    stroke: #c7c7c7;
-}
-.county:hover {
-  fill: red;
-}
-.bubble {
-  fill-opacity: .5;
-  stroke: #fff;
-  stroke-width: .5px;
-}
 .dropshadow {
-  fill: #ccc;
+  fill: #ddd;
   stroke: #fff;
   stroke-width: .5px;
   filter: url(#drop-shadow);
+}
+.county {
+    fill: #f8f8f8;
+    stroke: #c7c7c7;
+    stroke-width: .25px;
+}
+.bubbles circle {
+    fill-opacity: .9;
+}
+.bubbles .gop {
+    fill: #DC4E54;
+}
+.bubbles .dem {
+    fill: #047BC0;
 }
 </style>
 <body>
     <section id="map"></section>
 </body>
-<script src="/static/underscore-min.js"></script>
 <script src="/static/d3.v3.min.js"></script>
 <script src="/static/topojson.v1.min.js"></script>
-<script>
-var path = d3.geo.path().projection(null);
-
-var svg = d3.select("#map").append("svg")
-    .attr("width", 960)
-    .attr("height", 625);
-
-var radius = d3.scale.sqrt()
-    .domain([0, 1e6])
-    .range([0, 15]);
-
-var defs = svg.append("defs");
-var filter = defs.append("filter")
-    .attr("id", "drop-shadow")
-    .attr("height", "130%");
-filter.append("feGaussianBlur")
-    .attr("in", "SourceAlpha")
-    .attr("stdDeviation", 5)
-    .attr("result", "blur");
-filter.append("feOffset")
-    .attr("in", "blur")
-    .attr("dx", 2)
-    .attr("dy", 2)
-    .attr("result", "offsetBlur");
-
-var feMerge = filter.append("feMerge");
-feMerge.append("feMergeNode")
-    .attr("in", "offsetBlur")
-feMerge.append("feMergeNode")
-    .attr("in", "SourceGraphic");
-
-d3.json("/static/iowa.json", function(error, topology) {
-  if (error) throw error;
-
-  svg.append("path")
-      .datum(topojson.feature(topology, topology.objects.state))
-      .attr("class", "dropshadow")
-      .attr("d", path);
-
-  svg.selectAll("path")
-      .data(topojson.feature(topology, topology.objects.counties).features)
-    .enter().append("path")
-      .attr("class", "county")
-      .attr("d", path)
-      .attr("data-fips", function (d) { return d.properties.GEOID; })
-      .attr("data-name", function (d) { return d.properties.NAME; });
-
-  svg.append("g")
-      .attr("class", "bubble")
-    .selectAll("circle")
-      .data(topojson.feature(topology, topology.objects.counties).features)
-    .enter().append("circle")
-      .attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
-      .attr("r", function(d) { return radius(150000); });
-
-});
+<script src="/static/queue.v1.min.js"></script>
+<script type="text/javascript">
+    {% include "index.js" %}
 </script>

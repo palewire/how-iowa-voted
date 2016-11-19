@@ -1,9 +1,9 @@
 .PHONY: data data/iowa-counties.json
 
-data:
+results:
 	python data/process.py
 
-json:
+maps:
 	node_modules/.bin/topojson \
 		-p \
 		--id="GEOID" \
