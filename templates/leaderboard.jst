@@ -1,5 +1,6 @@
+<% var numberWithCommas = function(x) { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); } %>
 <% if (winner == 'dem') { %>
-    <span class="dem"><%= dem %></span> defeated <span class="gop"><%= gop %></span>
+    <span class="dem"><%= dem %></span> defeated <span class="gop"><%= gop %></span> by <%= numberWithCommas(margin) %> votes
 <% } else { %>
-    <span class="gop"><%= gop %></span> defeated <span class="dem"><%= dem %></span>
+    <span class="gop"><%= gop %></span> defeated <span class="dem"><%= dem %></span> by <%= numberWithCommas(margin) %> votes
 <% } %>
