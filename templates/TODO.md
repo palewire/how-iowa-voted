@@ -1,0 +1,10 @@
+- [ ] City labels
+- [ ] Hover effects
+- [ ] Responsive maps
+- [ ] Mini multiples for each candidate
+- [ ] Corum style squares
+- [ ] 2008 data
+- [ ] 2012 data
+- [ ] 2016 data
+- [ ] Bubble key and party legends
+- [ ] Top line results for each race

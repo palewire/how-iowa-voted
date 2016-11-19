@@ -1,6 +1,32 @@
 var app = {};
-app.selector = "section.graphic";
 app.path = d3.geo.path().projection(null);
+app.races = {
+    2000: {
+        "hed": "2000",
+        "dem": "Al Gore",
+        "gop": "George W. Bush"
+    },
+    2004: {
+        "hed": "2004",
+        "dem": "John Kerry",
+        "gop": "George W. Bush"
+    },
+    2008: {
+        "hed": "2008",
+        "dem": "Barack Obama",
+        "gop": "John McCain"
+    },
+    2012: {
+        "hed": "2012",
+        "dem": "Barack Obama",
+        "gop": "Mitt Romney"
+    },
+    2016: {
+        "hed": "2016",
+        "dem": "Hillary Clinton",
+        "gop": "Donald Trump"
+    }
+};
 app.addDropShadow = function (svg) {
     var defs = svg.append("defs");
 
@@ -30,11 +56,8 @@ app.createRadius = function(values) {
       .range([0, 30]);
     return radius;
 };
-app.createSvg = function () {
-    var svg = d3.select("section#maps")
-      .append("section")
-        .attr("class", "cycle")
-      .append("svg")
+app.createSvg = function (ele) {
+    var svg = ele.append("svg")
         .attr("width", 960)
         .attr("height", 625);
 
@@ -60,8 +83,15 @@ app.createSvg = function () {
 
     return svg;
 };
-app.createMap = function (results) {
-    var svg = app.createSvg();
+app.createMap = function (race) {
+    var section = d3.select("section#maps")
+      .append("section")
+        .attr("class", "cycle");
+
+    var hed = section.append("h2")
+      .text(race.hed);
+
+    var svg = app.createSvg(section);
     svg.append("g")
         .attr("class", "bubbles")
       .selectAll("circle")
@@ -69,11 +99,11 @@ app.createMap = function (results) {
       .enter().append("circle")
         .attr("transform", function(d) { return "translate(" + app.path.centroid(d) + ")";})
         .attr("class", function (d) {
-            var county = results[d.properties.GEOID];
+            var county = race.results[d.properties.GEOID];
             return county.leader;
         })
         .attr("r", function(d) {
-            var county = results[d.properties.GEOID];
+            var county = race.results[d.properties.GEOID];
             return app.radius(county.margin);
         });
 };
@@ -96,7 +126,12 @@ app.boot = function () {
              d3.values(results2012)
           ));
 
-          app.createMap(results2000);
-          app.createMap(results2004);
+          app.races[2000].results = results2000;
+          app.races[2004].results = results2004;
+          app.races[2008].results = results2008;
+          app.races[2012].results = results2012;
+
+          app.createMap(app.races[2004]);
+          app.createMap(app.races[2000]);
       });
 };
