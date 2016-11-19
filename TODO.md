@@ -8,3 +8,4 @@
 - [ ] 2016 data
 - [ ] Bubble key and party legends
 - [ ] Top line results for each race
+- [ ] ring note annotations
