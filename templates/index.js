@@ -4,27 +4,32 @@ app.races = {
     2000: {
         "hed": "2000",
         "dem": "Al Gore",
-        "gop": "George W. Bush"
+        "gop": "George W. Bush",
+        "winner": "dem"
     },
     2004: {
         "hed": "2004",
         "dem": "John Kerry",
-        "gop": "George W. Bush"
+        "gop": "George W. Bush",
+        "winner": "gop"
     },
     2008: {
         "hed": "2008",
         "dem": "Barack Obama",
-        "gop": "John McCain"
+        "gop": "John McCain",
+        "winner": "dem"
     },
     2012: {
         "hed": "2012",
         "dem": "Barack Obama",
-        "gop": "Mitt Romney"
+        "gop": "Mitt Romney",
+        "winner": "dem"
     },
     2016: {
         "hed": "2016",
         "dem": "Hillary Clinton",
-        "gop": "Donald Trump"
+        "gop": "Donald Trump",
+        "winner": "gop"
     }
 };
 app.addDropShadow = function (svg) {

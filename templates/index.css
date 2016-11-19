@@ -54,6 +54,14 @@ section.leaderboard {
     position: relative;
     margin: 0 0 20px 0;
 }
+section.leaderboard .gop {
+    text-decoration: none;
+    border-bottom: 2px solid #DC4E54;
+}
+section.leaderboard .dem {
+    text-decoration: none;
+    border-bottom: 2px solid #047BC0;
+}
 .dropshadow {
   fill: #ddd;
   stroke: #fff;

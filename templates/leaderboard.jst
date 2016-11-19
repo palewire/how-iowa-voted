@@ -1,1 +1,5 @@
-<%= dem %> vs. <%= gop %>
+<% if (winner == 'dem') { %>
+    <span class="dem"><%= dem %></span> defeated <span class="gop"><%= gop %></span>
+<% } else { %>
+    <span class="gop"><%= gop %></span> defeated <span class="dem"><%= dem %></span>
+<% } %>
