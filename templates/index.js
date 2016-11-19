@@ -30,7 +30,7 @@ app.createRadius = function(values) {
       .range([0, 30]);
     return radius;
 };
-app.createSvg = function (topology) {
+app.createSvg = function () {
     var svg = d3.select("body")
       .append("section")
         .attr("class", "map")
@@ -43,14 +43,14 @@ app.createSvg = function (topology) {
     svg.append("g")
         .attr("class", "border")
       .append("path")
-        .datum(topojson.feature(topology, topology.objects.state))
+        .datum(topojson.feature(app.topology, app.topology.objects.state))
         .attr("class", "dropshadow")
         .attr("d", app.path);
 
     svg.append("g")
         .attr("class", "counties")
       .selectAll("path")
-        .data(topojson.feature(topology, topology.objects.counties).features
+        .data(topojson.feature(app.topology, app.topology.objects.counties).features
           .sort(function(a, b) { return b.properties.NAME; }))
       .enter().append("path")
         .attr("class", "county")
@@ -60,12 +60,12 @@ app.createSvg = function (topology) {
 
     return svg;
 };
-app.createMap = function (topology, results) {
-    var svg = app.createSvg(topology);
+app.createMap = function (results) {
+    var svg = app.createSvg();
     svg.append("g")
         .attr("class", "bubbles")
       .selectAll("circle")
-        .data(topojson.feature(topology, topology.objects.counties).features)
+        .data(topojson.feature(app.topology, app.topology.objects.counties).features)
       .enter().append("circle")
         .attr("transform", function(d) { return "translate(" + app.path.centroid(d) + ")";})
         .attr("class", function (d) {
@@ -87,6 +87,8 @@ app.boot = function () {
       .await(function(error, topology, results2000, results2004, results2008, results2012) {
           if (error) throw error;
 
+          app.topology = topology;
+
           app.radius = app.createRadius(_.flatten(
              d3.values(results2000),
              d3.values(results2004),
@@ -94,7 +96,7 @@ app.boot = function () {
              d3.values(results2012)
           ));
 
-          app.createMap(topology, results2000);
-          app.createMap(topology, results2004);
+          app.createMap(results2000);
+          app.createMap(results2004);
       });
 };
