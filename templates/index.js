@@ -91,6 +91,10 @@ app.createMap = function (race) {
     var hed = section.append("h2")
       .text(race.hed);
 
+    var leaderboard = section.append("section")
+      .attr("class", "leaderboard")
+      .html("LEADERBOARD GOES HERE");
+
     var svg = app.createSvg(section);
     svg.append("g")
         .attr("class", "bubbles")

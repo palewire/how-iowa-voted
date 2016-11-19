@@ -15,14 +15,18 @@ h1 {
 }
 h2 {
     font-size: 1.75em;
-    margin: 0 0 1.1em 0;
+    margin: 0 0 0.2em 0;
 }
 p {
     font-size: 0.9em;
-    line-height: 1.5em;
-    margin: 0.9em 0;
+    margin: 0.7em 0;
+}
+p.description {
+    font-size: 1.15em;
+    max-width: 900px;
 }
 p.byline {
+    font-size: 0.8em;
     margin: 0;
 }
 section#maps {
@@ -43,6 +47,12 @@ section.cycle:first-of-type {
 }
 section.cycle:last-of-type {
     margin-bottom: 0;
+}
+section.leaderboard {
+    clear: both;
+    display: block;
+    position: relative;
+    margin: 0 0 20px 0;
 }
 .dropshadow {
   fill: #ddd;
