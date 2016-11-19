@@ -217,7 +217,7 @@ class Standardize2012(Standardizer):
     novote_names = ['Over Votes', 'Under Votes']
     real_dem_total = 822544
     real_gop_total = 730617
-    real_grand_total = 1543662
+    real_grand_total = 1589899
 
 
 class Standardize2016(Standardizer):
@@ -233,10 +233,10 @@ class Standardize2016(Standardizer):
 
 
 def main():
-    #Standardize2000()
-    #Standardize2004()
+    Standardize2000()
+    Standardize2004()
     Standardize2008()
-    #Standardize2012()
+    Standardize2012()
 
 
 if __name__ == "__main__":

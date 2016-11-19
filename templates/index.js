@@ -146,6 +146,7 @@ app.boot = function () {
           app.races[2008].results = results2008;
           app.races[2012].results = results2012;
 
+          app.createMap(app.races[2012]);
           app.createMap(app.races[2008]);
           app.createMap(app.races[2004]);
           app.createMap(app.races[2000]);
