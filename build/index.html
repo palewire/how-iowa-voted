@@ -1,4 +1,153 @@
-var app = {};
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Iowa voted</title>
+    <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection"/>
+    <style type="text/css">
+        article.container {
+    margin: 20px auto;
+    max-width: 940px;
+}
+h1, h3 {
+    margin: 0 0 0.25rem 0;
+}
+p.description {
+    margin-top: 0.5rem;
+    max-width: 900px;
+}
+p.byline {
+    margin: 0 0 0.5rem 0;
+    font-size: 14px;
+}
+section.leaderboard p {
+    margin: 0.25em 0;
+}
+section.leaderboard .gop {
+    text-decoration: none;
+    border-bottom: 2px solid #DC4E54;
+}
+section.leaderboard .dem {
+    text-decoration: none;
+    border-bottom: 2px solid #047BC0;
+}
+.dropshadow {
+  fill: #ddd;
+  stroke: #fff;
+  stroke-width: .5px;
+  filter: url(#drop-shadow);
+}
+.county {
+    fill: #f8f8f8;
+    stroke: #c7c7c7;
+    stroke-width: .25px;
+}
+.bubbles circle {
+    fill-opacity: .9;
+}
+.bubbles .gop {
+    fill: #DC4E54;
+}
+.bubbles .dem {
+    fill: #047BC0;
+}
+.city,
+.city-label {
+    fill: #444;
+}
+text {
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    pointer-events: none;
+}
+.btn {
+    margin-bottom: 20px;
+}
+table.bordered tr:last-of-type {
+    border-bottom: none;
+}
+@media (max-width: 720px) {
+    .city-label, .city {
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <article class="container">
+        <header>
+            <h1>How Iowa voted</h1>
+            <p class="byline flow-text md-body-1">
+                By <a href="http://palewi.re/who-is-ben-welsh/">Ben Welsh</a>
+                &#8226;
+                Nov. 19, 2016
+            </p>
+            <p class="description flow-text">
+                Results from Iowa's 99 counties in the last five presidential elections
+            </p>
+        </header>
+        <section id="maps">
+            <section id="map-2016" class="cycle section"></section>
+            <div class="divider"></div>
+            <section id="map-2012" class="cycle section"></section>
+            <div class="divider"></div>
+            <section id="map-2008" class="cycle section"></section>
+            <div class="divider"></div>
+            <section id="map-2004" class="cycle section"></section>
+            <div class="divider"></div>
+            <section id="map-2000" class="cycle section"></section>
+            <div class="divider"></div>
+        </section>
+        <section id="sources">
+            <p>Sources: <a href="http://www.openelections.net/">OpenElections</a>, <a href="https://sos.iowa.gov/elections/results/index.html">Iowa Secretary of State</a>, <a href="http://www.census.gov/">U.S. Census</a></p>
+        </section>
+    </article>
+    <script src="static/js/jquery-3.1.1.min.js"></script>
+    <script src="static/js/underscore-min.js"></script>
+    <script src="static/js/d3.v3.min.js"></script>
+    <script src="static/js/topojson.v1.min.js"></script>
+    <script src="static/js/queue.v1.min.js"></script>
+    <script id="leaderboard-tmpl" type="template/jst">
+        <% var numberWithCommas = function(x) { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); } %>
+<p class="flow-text">
+<% if (winner == 'dem') { %>
+    <span class="dem"><%= dem %></span> defeated <span class="gop"><%= gop %></span> by <%= numberWithCommas(margin) %> votes
+<% } else { %>
+    <span class="gop"><%= gop %></span> defeated <span class="dem"><%= dem %></span> by <%= numberWithCommas(margin) %> votes
+<% } %>
+</p>
+    </script>
+    <script id="table-tmpl" type="template/jst">
+        <% var lastName = function(x) { var s = x.split(" "); return s[s.length-1]; } %>
+<% var numberWithCommas = function(x) { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); } %>
+<% var toTitleCase = function(str) { if (str.toLowerCase() == "o'brien") { return "O'Brien"; } else { return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}); }} %>
+<center><a class="waves-effect waves-light btn show" id="btn-<%= hed %>">Show more results +</a></center>
+<table class="bordered" id="table-<%= hed %>" style="display:none;">
+    <tr>
+        <th>County</th>
+        <th class="right-align"><%= lastName(dem) %></th>
+        <th class="right-align"><%= lastName(gop) %></th>
+        <th class="right-align">Other</th>
+    </tr>
+    <% _.each(results, function (row, i) { %>
+        <tr>
+            <td><%= toTitleCase(row.name.toLowerCase()) %></td>
+            <td class="right-align"><%= numberWithCommas(row.dem_total) %></td>
+            <td class="right-align"><%= numberWithCommas(row.gop_total) %></td>
+            <td class="right-align"><%= numberWithCommas(row.other_total) %></td>
+        </tr>
+    <% }); %>
+    <tr>
+        <th>Total</td>
+        <th class="right-align"><%= numberWithCommas(dem_total) %></th>
+        <th class="right-align"><%= numberWithCommas(gop_total) %></th>
+        <th class="right-align"><%= numberWithCommas(grand_total-(dem_total+gop_total)) %></th>
+    </tr>
+</table>
+    </script>
+    <script type="text/javascript">
+        var app = {};
 app.projection = d3.geo.mercator()
   .scale(7000)
   .center([-93.15, 42.15]);
@@ -253,3 +402,7 @@ app.boot = function () {
           app.createTable(app.races[2000]);
       });
 };
+        app.boot();
+    </script>
+</body>
+</html>
