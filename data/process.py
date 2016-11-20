@@ -23,6 +23,7 @@ class Standardizer(object):
             self.data_dir,
             os.pardir,
             "static",
+            "json",
             self.out_file.replace("csv", "json")
         )
         self.reader = list(csv.DictReader(open(self.in_path, 'rbU')))

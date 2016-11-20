@@ -14,7 +14,7 @@ maps:
 		-- counties=data/iowa-counties.shp
 
 	node_modules/.bin/topojson-merge \
-		-o static/iowa.json \
+		-o static/json/iowa.json \
 		--in-object=counties \
 		--out-object=state \
 		--key='d.properties.STATEFP' \

@@ -1,7 +1,11 @@
 var app = {};
-app.path = d3.geo.path().projection(null);
+app.projection = d3.geo.mercator()
+  .scale(7000)
+  .center([-93.15, 42.15]);
+app.path = d3.geo.path().projection(app.projection);
 app.races = {
     2000: {
+        "selector": "#map-2000",
         "hed": "2000",
         "dem": "Al Gore",
         "gop": "George W. Bush",
@@ -9,6 +13,7 @@ app.races = {
         "margin": 4144,
     },
     2004: {
+        "selector": "#map-2004",
         "hed": "2004",
         "dem": "John Kerry",
         "gop": "George W. Bush",
@@ -16,6 +21,7 @@ app.races = {
         "margin": 10059,
     },
     2008: {
+        "selector": "#map-2008",
         "hed": "2008",
         "dem": "Barack Obama",
         "gop": "John McCain",
@@ -23,6 +29,7 @@ app.races = {
         "margin": 146561,
     },
     2012: {
+        "selector": "#map-2012",
         "hed": "2012",
         "dem": "Barack Obama",
         "gop": "Mitt Romney",
@@ -30,12 +37,19 @@ app.races = {
         "margin": 91927,
     },
     2016: {
+        "selector": "#map-2016",
         "hed": "2016",
         "dem": "Hillary Clinton",
         "gop": "Donald Trump",
         "winner": "gop",
         "margin": 148133,
     }
+};
+app.fitMaps = function() {
+  d3.selectAll("g").attr("transform", "scale(" + $(".map").width()/900 + ")");
+  $(".cycle.section").each(function (index, ele) {
+      $("svg", ele).height($(".map").width()*0.618);
+  });
 };
 app.addDropShadow = function (svg) {
     var defs = svg.append("defs");
@@ -67,30 +81,23 @@ app.createRadius = function(values) {
     return radius;
 };
 app.createSvg = function (ele) {
-    var width = 960;
-    var height = 625;
-    var mapRatio = height / width;
-
     var svg = ele.append("svg")
-        .attr("class", "map")
-        .attr("width", width)
-        .attr("height", height)
-        .attr("viewBox", "0 0 960 625");
+        .attr("class", "map col s12")
+        .attr("width", "100%");
 
     app.addDropShadow(svg);
 
     svg.append("g")
         .attr("class", "border")
       .append("path")
-        .datum(topojson.feature(app.topology, app.topology.objects.state))
+        .datum(app.json.state)
         .attr("class", "dropshadow")
         .attr("d", app.path);
 
     svg.append("g")
         .attr("class", "counties")
       .selectAll("path")
-        .data(topojson.feature(app.topology, app.topology.objects.counties).features
-          .sort(function(a, b) { return b.properties.NAME; }))
+        .data(app.json.counties)
       .enter().append("path")
         .attr("class", "county")
         .attr("d", app.path)
@@ -100,9 +107,7 @@ app.createSvg = function (ele) {
     return svg;
 };
 app.createMap = function (race) {
-    var section = d3.select("section#maps")
-      .append("section")
-        .attr("class", "cycle");
+    var section = d3.select(race.selector);
 
     var hed = section.append("h2")
       .text(race.hed);
@@ -112,10 +117,11 @@ app.createMap = function (race) {
       .html(_.template(d3.select("#leaderboard-tmpl").html())(race));
 
     var svg = app.createSvg(section);
+
     svg.append("g")
         .attr("class", "bubbles")
       .selectAll("circle")
-        .data(topojson.feature(app.topology, app.topology.objects.counties).features)
+        .data(app.json.counties)
       .enter().append("circle")
         .attr("transform", function(d) { return "translate(" + app.path.centroid(d) + ")";})
         .attr("class", function (d) {
@@ -126,19 +132,25 @@ app.createMap = function (race) {
             var county = race.results[d.properties.GEOID];
             return app.radius(county.margin);
         });
+    app.fitMaps();
 };
 app.boot = function () {
+    d3.select(window).on("resize", app.fitMaps);
     queue()
-      .defer(d3.json, "/static/json/iowa.json")
+      .defer(d3.json, "/static/json/iowa-counties.geojson")
+      .defer(d3.json, "/static/json/iowa-state.geojson")
       .defer(d3.json, "/static/json/2000.json")
       .defer(d3.json, "/static/json/2004.json")
       .defer(d3.json, "/static/json/2008.json")
       .defer(d3.json, "/static/json/2012.json")
       .defer(d3.json, "/static/json/2016.json")
-      .await(function(error, topology, results2000, results2004, results2008, results2012, results2016) {
+      .await(function(error, counties, state, results2000, results2004, results2008, results2012, results2016) {
           if (error) throw error;
 
-          app.topology = topology;
+          app.json = {
+              counties: counties.features,
+              state: state.features[0]
+          };
 
           app.radius = app.createRadius(_.flatten(
              d3.values(results2000),
