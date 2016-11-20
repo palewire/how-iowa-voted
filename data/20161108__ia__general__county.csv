@@ -1,0 +1,1090 @@
+office,district,candidate,party,reporting_level,jurisdiction,vote_type,votes
+President/Vice President,,Trump,GOP,county,Boone,,7458
+President/Vice President,,Clinton,Dem,county,Boone,,5517
+President/Vice President,,Johnson,Lib,county,Boone,,643
+President/Vice President,,McMullin,PEC,county,Boone,,158
+President/Vice President,,Stein,Grn,county,Boone,,104
+President/Vice President,,Castle,CST,county,Boone,,56
+President/Vice President,,Kahn,Oth,county,Boone,,22
+President/Vice President,,Vacek,LMN,county,Boone,,20
+President/Vice President,,De La Fuente,PEC,county,Boone,,6
+President/Vice President,,La Riva,PSL,county,Boone,,0
+President/Vice President,,Trump,GOP,county,Bremer,,7199
+President/Vice President,,Clinton,Dem,county,Bremer,,5349
+President/Vice President,,Johnson,Lib,county,Bremer,,543
+President/Vice President,,McMullin,PEC,county,Bremer,,87
+President/Vice President,,Stein,Grn,county,Bremer,,81
+President/Vice President,,Castle,CST,county,Bremer,,54
+President/Vice President,,Vacek,LMN,county,Bremer,,21
+President/Vice President,,Kahn,Oth,county,Bremer,,10
+President/Vice President,,De La Fuente,PEC,county,Bremer,,5
+President/Vice President,,La Riva,PSL,county,Bremer,,1
+President/Vice President,,Trump,GOP,county,Benton,,8226
+President/Vice President,,Clinton,Dem,county,Benton,,4672
+President/Vice President,,Johnson,Lib,county,Benton,,540
+President/Vice President,,Stein,Grn,county,Benton,,86
+President/Vice President,,McMullin,PEC,county,Benton,,70
+President/Vice President,,Castle,CST,county,Benton,,61
+President/Vice President,,Kahn,Oth,county,Benton,,17
+President/Vice President,,Vacek,LMN,county,Benton,,12
+President/Vice President,,La Riva,PSL,county,Benton,,4
+President/Vice President,,De La Fuente,PEC,county,Benton,,2
+President/Vice President,,Trump,GOP,county,Black Hawk,,27382
+President/Vice President,,Clinton,Dem,county,Black Hawk,,32006
+President/Vice President,,Johnson,Lib,county,Black Hawk,,2357
+President/Vice President,,Stein,Grn,county,Black Hawk,,601
+President/Vice President,,McMullin,PEC,county,Black Hawk,,483
+President/Vice President,,Castle,CST,county,Black Hawk,,202
+President/Vice President,,Vacek,LMN,county,Black Hawk,,97
+President/Vice President,,Kahn,Oth,county,Black Hawk,,60
+President/Vice President,,De La Fuente,PEC,county,Black Hawk,,22
+President/Vice President,,La Riva,PSL,county,Black Hawk,,11
+President/Vice President,,Trump,GOP,county,Buchanan,,5504
+President/Vice President,,Clinton,Dem,county,Buchanan,,3966
+President/Vice President,,Johnson,Lib,county,Buchanan,,478
+President/Vice President,,Castle,CST,county,Buchanan,,58
+President/Vice President,,Stein,Grn,county,Buchanan,,54
+President/Vice President,,McMullin,PEC,county,Buchanan,,48
+President/Vice President,,Kahn,Oth,county,Buchanan,,17
+President/Vice President,,Vacek,LMN,county,Buchanan,,9
+President/Vice President,,De La Fuente,PEC,county,Buchanan,,2
+President/Vice President,,La Riva,PSL,county,Buchanan,,1
+President/Vice President,,Trump,GOP,county,Ringgold,,1820
+President/Vice President,,Clinton,Dem,county,Ringgold,,753
+President/Vice President,,Johnson,Lib,county,Ringgold,,72
+President/Vice President,,Castle,CST,county,Ringgold,,15
+President/Vice President,,Stein,Grn,county,Ringgold,,8
+President/Vice President,,McMullin,PEC,county,Ringgold,,7
+President/Vice President,,Kahn,Oth,county,Ringgold,,5
+President/Vice President,,Vacek,LMN,county,Ringgold,,2
+President/Vice President,,De La Fuente,PEC,county,Ringgold,,2
+President/Vice President,,La Riva,PSL,county,Ringgold,,0
+President/Vice President,,Trump,GOP,county,Pottawattamie,,24441
+President/Vice President,,Clinton,Dem,county,Pottawattamie,,15341
+President/Vice President,,Johnson,Lib,county,Pottawattamie,,1467
+President/Vice President,,Stein,Grn,county,Pottawattamie,,327
+President/Vice President,,McMullin,PEC,county,Pottawattamie,,252
+President/Vice President,,Kahn,Oth,county,Pottawattamie,,154
+President/Vice President,,Vacek,LMN,county,Pottawattamie,,137
+President/Vice President,,Castle,CST,county,Pottawattamie,,93
+President/Vice President,,De La Fuente,PEC,county,Pottawattamie,,8
+President/Vice President,,La Riva,PSL,county,Pottawattamie,,6
+President/Vice President,,Trump,GOP,county,Poweshiek,,4936
+President/Vice President,,Clinton,Dem,county,Poweshiek,,4272
+President/Vice President,,Johnson,Lib,county,Poweshiek,,281
+President/Vice President,,Stein,Grn,county,Poweshiek,,72
+President/Vice President,,McMullin,PEC,county,Poweshiek,,46
+President/Vice President,,Castle,CST,county,Poweshiek,,44
+President/Vice President,,Vacek,LMN,county,Poweshiek,,20
+President/Vice President,,Kahn,Oth,county,Poweshiek,,11
+President/Vice President,,La Riva,PSL,county,Poweshiek,,8
+President/Vice President,,De La Fuente,PEC,county,Poweshiek,,3
+President/Vice President,,Trump,GOP,county,Pocahontas,,2692
+President/Vice President,,Clinton,Dem,county,Pocahontas,,962
+President/Vice President,,Johnson,Lib,county,Pocahontas,,115
+President/Vice President,,Castle,CST,county,Pocahontas,,21
+President/Vice President,,Stein,Grn,county,Pocahontas,,14
+President/Vice President,,McMullin,PEC,county,Pocahontas,,14
+President/Vice President,,Vacek,LMN,county,Pocahontas,,6
+President/Vice President,,Kahn,Oth,county,Pocahontas,,6
+President/Vice President,,De La Fuente,PEC,county,Pocahontas,,1
+President/Vice President,,La Riva,PSL,county,Pocahontas,,0
+President/Vice President,,Trump,GOP,county,Polk,,93421
+President/Vice President,,Clinton,Dem,county,Polk,,119671
+President/Vice President,,Johnson,Lib,county,Polk,,10009
+President/Vice President,,McMullin,PEC,county,Polk,,2372
+President/Vice President,,Stein,Grn,county,Polk,,1734
+President/Vice President,,Castle,CST,county,Polk,,668
+President/Vice President,,Kahn,Oth,county,Polk,,221
+President/Vice President,,Vacek,LMN,county,Polk,,200
+President/Vice President,,De La Fuente,PEC,county,Polk,,73
+President/Vice President,,La Riva,PSL,county,Polk,,51
+President/Vice President,,Trump,GOP,county,Dubuque,,23384
+President/Vice President,,Clinton,Dem,county,Dubuque,,22774
+President/Vice President,,Castle,CST,county,Dubuque,,1995
+President/Vice President,,Johnson,Lib,county,Dubuque,,374
+President/Vice President,,McMullin,PEC,county,Dubuque,,303
+President/Vice President,,Stein,Grn,county,Dubuque,,87
+President/Vice President,,Vacek,LMN,county,Dubuque,,60
+President/Vice President,,Kahn,Oth,county,Dubuque,,35
+President/Vice President,,De La Fuente,PEC,county,Dubuque,,13
+President/Vice President,,La Riva,PSL,county,Dubuque,,12
+President/Vice President,,Trump,GOP,county,Emmet,,3121
+President/Vice President,,Clinton,Dem,county,Emmet,,1356
+President/Vice President,,Johnson,Lib,county,Emmet,,138
+President/Vice President,,Stein,Grn,county,Emmet,,26
+President/Vice President,,Castle,CST,county,Emmet,,20
+President/Vice President,,Kahn,Oth,county,Emmet,,16
+President/Vice President,,McMullin,PEC,county,Emmet,,16
+President/Vice President,,Vacek,LMN,county,Emmet,,13
+President/Vice President,,La Riva,PSL,county,Emmet,,1
+President/Vice President,,De La Fuente,PEC,county,Emmet,,0
+President/Vice President,,Trump,GOP,county,Fayette,,5591
+President/Vice President,,Clinton,Dem,county,Fayette,,3666
+President/Vice President,,Johnson,Lib,county,Fayette,,326
+President/Vice President,,McMullin,PEC,county,Fayette,,65
+President/Vice President,,Stein,Grn,county,Fayette,,62
+President/Vice President,,Castle,CST,county,Fayette,,41
+President/Vice President,,Vacek,LMN,county,Fayette,,35
+President/Vice President,,Kahn,Oth,county,Fayette,,23
+President/Vice President,,De La Fuente,PEC,county,Fayette,,3
+President/Vice President,,La Riva,PSL,county,Fayette,,1
+President/Vice President,,Trump,GOP,county,Floyd,,4371
+President/Vice President,,Clinton,Dem,county,Floyd,,3177
+President/Vice President,,Johnson,Lib,county,Floyd,,241
+President/Vice President,,McMullin,PEC,county,Floyd,,63
+President/Vice President,,Stein,Grn,county,Floyd,,60
+President/Vice President,,Castle,CST,county,Floyd,,43
+President/Vice President,,Kahn,Oth,county,Floyd,,16
+President/Vice President,,Vacek,LMN,county,Floyd,,8
+President/Vice President,,De La Fuente,PEC,county,Floyd,,3
+President/Vice President,,La Riva,PSL,county,Floyd,,3
+President/Vice President,,Trump,GOP,county,Franklin,,3153
+President/Vice President,,Clinton,Dem,county,Franklin,,1490
+President/Vice President,,Johnson,Lib,county,Franklin,,187
+President/Vice President,,Stein,Grn,county,Franklin,,31
+President/Vice President,,McMullin,PEC,county,Franklin,,27
+President/Vice President,,Castle,CST,county,Franklin,,16
+President/Vice President,,Vacek,LMN,county,Franklin,,5
+President/Vice President,,Kahn,Oth,county,Franklin,,4
+President/Vice President,,De La Fuente,PEC,county,Franklin,,2
+President/Vice President,,La Riva,PSL,county,Franklin,,0
+President/Vice President,,Trump,GOP,county,Plymouth,,9659
+President/Vice President,,Clinton,Dem,county,Plymouth,,2878
+President/Vice President,,Johnson,Lib,county,Plymouth,,342
+President/Vice President,,McMullin,PEC,county,Plymouth,,70
+President/Vice President,,Stein,Grn,county,Plymouth,,52
+President/Vice President,,Castle,CST,county,Plymouth,,33
+President/Vice President,,Kahn,Oth,county,Plymouth,,14
+President/Vice President,,Vacek,LMN,county,Plymouth,,5
+President/Vice President,,La Riva,PSL,county,Plymouth,,3
+President/Vice President,,De La Fuente,PEC,county,Plymouth,,1
+President/Vice President,,Trump,GOP,county,Palo Alto,,3079
+President/Vice President,,Clinton,Dem,county,Palo Alto,,1395
+President/Vice President,,Johnson,Lib,county,Palo Alto,,131
+President/Vice President,,Stein,Grn,county,Palo Alto,,20
+President/Vice President,,Kahn,Oth,county,Palo Alto,,14
+President/Vice President,,McMullin,PEC,county,Palo Alto,,13
+President/Vice President,,Castle,CST,county,Palo Alto,,12
+President/Vice President,,Vacek,LMN,county,Palo Alto,,9
+President/Vice President,,La Riva,PSL,county,Palo Alto,,1
+President/Vice President,,De La Fuente,PEC,county,Palo Alto,,0
+President/Vice President,,Trump,GOP,county,Page,,4875
+President/Vice President,,Clinton,Dem,county,Page,,1801
+President/Vice President,,Johnson,Lib,county,Page,,174
+President/Vice President,,Stein,Grn,county,Page,,37
+President/Vice President,,McMullin,PEC,county,Page,,34
+President/Vice President,,Castle,CST,county,Page,,30
+President/Vice President,,Vacek,LMN,county,Page,,7
+President/Vice President,,Kahn,Oth,county,Page,,7
+President/Vice President,,De La Fuente,PEC,county,Page,,3
+President/Vice President,,La Riva,PSL,county,Page,,0
+President/Vice President,,Trump,GOP,county,Osceola,,2528
+President/Vice President,,Clinton,Dem,county,Osceola,,552
+President/Vice President,,Johnson,Lib,county,Osceola,,73
+President/Vice President,,McMullin,PEC,county,Osceola,,20
+President/Vice President,,Castle,CST,county,Osceola,,10
+President/Vice President,,Stein,Grn,county,Osceola,,10
+President/Vice President,,Kahn,Oth,county,Osceola,,3
+President/Vice President,,La Riva,PSL,county,Osceola,,1
+President/Vice President,,Vacek,LMN,county,Osceola,,0
+President/Vice President,,De La Fuente,PEC,county,Osceola,,0
+President/Vice President,,Trump,GOP,county,O'Brien,,5735
+President/Vice President,,Clinton,Dem,county,O'Brien,,1314
+President/Vice President,,Johnson,Lib,county,O'Brien,,195
+President/Vice President,,McMullin,PEC,county,O'Brien,,30
+President/Vice President,,Stein,Grn,county,O'Brien,,27
+President/Vice President,,Castle,CST,county,O'Brien,,22
+President/Vice President,,Kahn,Oth,county,O'Brien,,16
+President/Vice President,,Vacek,LMN,county,O'Brien,,4
+President/Vice President,,De La Fuente,PEC,county,O'Brien,,3
+President/Vice President,,La Riva,PSL,county,O'Brien,,2
+President/Vice President,,Trump,GOP,county,Greene,,2819
+President/Vice President,,Clinton,Dem,county,Greene,,1688
+President/Vice President,,Johnson,Lib,county,Greene,,160
+President/Vice President,,Stein,Grn,county,Greene,,31
+President/Vice President,,McMullin,PEC,county,Greene,,29
+President/Vice President,,Castle,CST,county,Greene,,20
+President/Vice President,,Vacek,LMN,county,Greene,,9
+President/Vice President,,Kahn,Oth,county,Greene,,4
+President/Vice President,,De La Fuente,PEC,county,Greene,,1
+President/Vice President,,La Riva,PSL,county,Greene,,1
+President/Vice President,,Trump,GOP,county,Fremont,,2401
+President/Vice President,,Clinton,Dem,county,Fremont,,959
+President/Vice President,,Johnson,Lib,county,Fremont,,115
+President/Vice President,,Stein,Grn,county,Fremont,,21
+President/Vice President,,McMullin,PEC,county,Fremont,,19
+President/Vice President,,Castle,CST,county,Fremont,,15
+President/Vice President,,Vacek,LMN,county,Fremont,,10
+President/Vice President,,Kahn,Oth,county,Fremont,,9
+President/Vice President,,De La Fuente,PEC,county,Fremont,,3
+President/Vice President,,La Riva,PSL,county,Fremont,,2
+President/Vice President,,Trump,GOP,county,Guthrie,,3603
+President/Vice President,,Clinton,Dem,county,Guthrie,,1720
+President/Vice President,,Johnson,Lib,county,Guthrie,,256
+President/Vice President,,Castle,CST,county,Guthrie,,20
+President/Vice President,,Stein,Grn,county,Guthrie,,18
+President/Vice President,,Vacek,LMN,county,Guthrie,,15
+President/Vice President,,McMullin,PEC,county,Guthrie,,15
+President/Vice President,,Kahn,Oth,county,Guthrie,,7
+President/Vice President,,De La Fuente,PEC,county,Guthrie,,0
+President/Vice President,,La Riva,PSL,county,Guthrie,,0
+President/Vice President,,Trump,GOP,county,Grundy,,4516
+President/Vice President,,Clinton,Dem,county,Grundy,,1847
+President/Vice President,,Johnson,Lib,county,Grundy,,233
+President/Vice President,,McMullin,PEC,county,Grundy,,58
+President/Vice President,,Stein,Grn,county,Grundy,,38
+President/Vice President,,Castle,CST,county,Grundy,,37
+President/Vice President,,Kahn,Oth,county,Grundy,,21
+President/Vice President,,Vacek,LMN,county,Grundy,,11
+President/Vice President,,De La Fuente,PEC,county,Grundy,,4
+President/Vice President,,La Riva,PSL,county,Grundy,,1
+President/Vice President,,Trump,GOP,county,Hamilton,,4450
+President/Vice President,,Clinton,Dem,county,Hamilton,,2715
+President/Vice President,,Johnson,Lib,county,Hamilton,,259
+President/Vice President,,McMullin,PEC,county,Hamilton,,67
+President/Vice President,,Castle,CST,county,Hamilton,,51
+President/Vice President,,Stein,Grn,county,Hamilton,,31
+President/Vice President,,Kahn,Oth,county,Hamilton,,8
+President/Vice President,,Vacek,LMN,county,Hamilton,,5
+President/Vice President,,De La Fuente,PEC,county,Hamilton,,3
+President/Vice President,,La Riva,PSL,county,Hamilton,,0
+President/Vice President,,Trump,GOP,county,Wapello,,8710
+President/Vice President,,Clinton,Dem,county,Wapello,,5591
+President/Vice President,,Johnson,Lib,county,Wapello,,380
+President/Vice President,,Stein,Grn,county,Wapello,,121
+President/Vice President,,McMullin,PEC,county,Wapello,,65
+President/Vice President,,Castle,CST,county,Wapello,,49
+President/Vice President,,Vacek,LMN,county,Wapello,,45
+President/Vice President,,Kahn,Oth,county,Wapello,,30
+President/Vice President,,De La Fuente,PEC,county,Wapello,,4
+President/Vice President,,La Riva,PSL,county,Wapello,,1
+President/Vice President,,Trump,GOP,county,Taylor,,2108
+President/Vice President,,Clinton,Dem,county,Taylor,,755
+President/Vice President,,Johnson,Lib,county,Taylor,,97
+President/Vice President,,Castle,CST,county,Taylor,,14
+President/Vice President,,McMullin,PEC,county,Taylor,,12
+President/Vice President,,Stein,Grn,county,Taylor,,10
+President/Vice President,,Kahn,Oth,county,Taylor,,3
+President/Vice President,,Vacek,LMN,county,Taylor,,2
+President/Vice President,,De La Fuente,PEC,county,Taylor,,2
+President/Vice President,,La Riva,PSL,county,Taylor,,0
+President/Vice President,,Trump,GOP,county,Tama,,4968
+President/Vice President,,Clinton,Dem,county,Tama,,3194
+President/Vice President,,Johnson,Lib,county,Tama,,244
+President/Vice President,,Stein,Grn,county,Tama,,79
+President/Vice President,,Castle,CST,county,Tama,,46
+President/Vice President,,McMullin,PEC,county,Tama,,44
+President/Vice President,,Vacek,LMN,county,Tama,,37
+President/Vice President,,Kahn,Oth,county,Tama,,20
+President/Vice President,,La Riva,PSL,county,Tama,,3
+President/Vice President,,De La Fuente,PEC,county,Tama,,1
+President/Vice President,,Trump,GOP,county,Van Buren,,2524
+President/Vice President,,Clinton,Dem,county,Van Buren,,843
+President/Vice President,,Johnson,Lib,county,Van Buren,,83
+President/Vice President,,McMullin,PEC,county,Van Buren,,23
+President/Vice President,,Castle,CST,county,Van Buren,,22
+President/Vice President,,Stein,Grn,county,Van Buren,,19
+President/Vice President,,Kahn,Oth,county,Van Buren,,8
+President/Vice President,,Vacek,LMN,county,Van Buren,,3
+President/Vice President,,De La Fuente,PEC,county,Van Buren,,1
+President/Vice President,,La Riva,PSL,county,Van Buren,,0
+President/Vice President,,Trump,GOP,county,Union,,3521
+President/Vice President,,Clinton,Dem,county,Union,,1920
+President/Vice President,,Johnson,Lib,county,Union,,212
+President/Vice President,,Stein,Grn,county,Union,,52
+President/Vice President,,Castle,CST,county,Union,,26
+President/Vice President,,McMullin,PEC,county,Union,,18
+President/Vice President,,Vacek,LMN,county,Union,,9
+President/Vice President,,Kahn,Oth,county,Union,,9
+President/Vice President,,De La Fuente,PEC,county,Union,,1
+President/Vice President,,La Riva,PSL,county,Union,,0
+President/Vice President,,Trump,GOP,county,Winneshiek,,5332
+President/Vice President,,Clinton,Dem,county,Winneshiek,,5238
+President/Vice President,,Johnson,Lib,county,Winneshiek,,381
+President/Vice President,,McMullin,PEC,county,Winneshiek,,102
+President/Vice President,,Stein,Grn,county,Winneshiek,,99
+President/Vice President,,Castle,CST,county,Winneshiek,,35
+President/Vice President,,Kahn,Oth,county,Winneshiek,,17
+President/Vice President,,Vacek,LMN,county,Winneshiek,,13
+President/Vice President,,De La Fuente,PEC,county,Winneshiek,,0
+President/Vice President,,La Riva,PSL,county,Winneshiek,,0
+President/Vice President,,Trump,GOP,county,Woodbury,,24627
+President/Vice President,,Clinton,Dem,county,Woodbury,,16102
+President/Vice President,,Johnson,Lib,county,Woodbury,,1173
+President/Vice President,,Stein,Grn,county,Woodbury,,323
+President/Vice President,,McMullin,PEC,county,Woodbury,,234
+President/Vice President,,Castle,CST,county,Woodbury,,206
+President/Vice President,,Vacek,LMN,county,Woodbury,,151
+President/Vice President,,Kahn,Oth,county,Woodbury,,93
+President/Vice President,,De La Fuente,PEC,county,Woodbury,,12
+President/Vice President,,La Riva,PSL,county,Woodbury,,12
+President/Vice President,,Trump,GOP,county,Worth,,2443
+President/Vice President,,Clinton,Dem,county,Worth,,1523
+President/Vice President,,Johnson,Lib,county,Worth,,165
+President/Vice President,,McMullin,PEC,county,Worth,,34
+President/Vice President,,Stein,Grn,county,Worth,,24
+President/Vice President,,Castle,CST,county,Worth,,15
+President/Vice President,,Kahn,Oth,county,Worth,,7
+President/Vice President,,Vacek,LMN,county,Worth,,4
+President/Vice President,,De La Fuente,PEC,county,Worth,,1
+President/Vice President,,La Riva,PSL,county,Worth,,0
+President/Vice President,,Trump,GOP,county,Wright,,3790
+President/Vice President,,Clinton,Dem,county,Wright,,1890
+President/Vice President,,Johnson,Lib,county,Wright,,175
+President/Vice President,,Stein,Grn,county,Wright,,35
+President/Vice President,,McMullin,PEC,county,Wright,,25
+President/Vice President,,Castle,CST,county,Wright,,19
+President/Vice President,,Vacek,LMN,county,Wright,,6
+President/Vice President,,Kahn,Oth,county,Wright,,6
+President/Vice President,,La Riva,PSL,county,Wright,,2
+President/Vice President,,De La Fuente,PEC,county,Wright,,1
+President/Vice President,,Trump,GOP,county,Shelby,,4340
+President/Vice President,,Clinton,Dem,county,Shelby,,1649
+President/Vice President,,Johnson,Lib,county,Shelby,,174
+President/Vice President,,McMullin,PEC,county,Shelby,,38
+President/Vice President,,Stein,Grn,county,Shelby,,28
+President/Vice President,,Castle,CST,county,Shelby,,21
+President/Vice President,,Kahn,Oth,county,Shelby,,12
+President/Vice President,,Vacek,LMN,county,Shelby,,5
+President/Vice President,,De La Fuente,PEC,county,Shelby,,2
+President/Vice President,,La Riva,PSL,county,Shelby,,1
+President/Vice President,,Trump,GOP,county,Sioux,,14761
+President/Vice President,,Clinton,Dem,county,Sioux,,2289
+President/Vice President,,Johnson,Lib,county,Sioux,,431
+President/Vice President,,McMullin,PEC,county,Sioux,,351
+President/Vice President,,Castle,CST,county,Sioux,,86
+President/Vice President,,Stein,Grn,county,Sioux,,53
+President/Vice President,,Kahn,Oth,county,Sioux,,9
+President/Vice President,,Vacek,LMN,county,Sioux,,5
+President/Vice President,,De La Fuente,PEC,county,Sioux,,4
+President/Vice President,,La Riva,PSL,county,Sioux,,0
+President/Vice President,,Trump,GOP,county,Sac,,3692
+President/Vice President,,Clinton,Dem,county,Sac,,1269
+President/Vice President,,Johnson,Lib,county,Sac,,129
+President/Vice President,,Stein,Grn,county,Sac,,23
+President/Vice President,,Castle,CST,county,Sac,,17
+President/Vice President,,McMullin,PEC,county,Sac,,15
+President/Vice President,,Kahn,Oth,county,Sac,,8
+President/Vice President,,Vacek,LMN,county,Sac,,4
+President/Vice President,,De La Fuente,PEC,county,Sac,,1
+President/Vice President,,La Riva,PSL,county,Sac,,0
+President/Vice President,,Trump,GOP,county,Dallas,,19288
+President/Vice President,,Clinton,Dem,county,Dallas,,15662
+President/Vice President,,Johnson,Lib,county,Dallas,,1749
+President/Vice President,,McMullin,PEC,county,Dallas,,518
+President/Vice President,,Stein,Grn,county,Dallas,,181
+President/Vice President,,Castle,CST,county,Dallas,,142
+President/Vice President,,Kahn,Oth,county,Dallas,,28
+President/Vice President,,Vacek,LMN,county,Dallas,,26
+President/Vice President,,De La Fuente,PEC,county,Dallas,,15
+President/Vice President,,La Riva,PSL,county,Dallas,,8
+President/Vice President,,Trump,GOP,county,Scott,,39083
+President/Vice President,,Clinton,Dem,county,Scott,,40302
+President/Vice President,,Johnson,Lib,county,Scott,,3547
+President/Vice President,,Stein,Grn,county,Scott,,782
+President/Vice President,,McMullin,PEC,county,Scott,,641
+President/Vice President,,Castle,CST,county,Scott,,297
+President/Vice President,,Vacek,LMN,county,Scott,,98
+President/Vice President,,Kahn,Oth,county,Scott,,84
+President/Vice President,,De La Fuente,PEC,county,Scott,,28
+President/Vice President,,La Riva,PSL,county,Scott,,16
+President/Vice President,,Trump,GOP,county,Crawford,,4608
+President/Vice President,,Clinton,Dem,county,Crawford,,1985
+President/Vice President,,Johnson,Lib,county,Crawford,,172
+President/Vice President,,Stein,Grn,county,Crawford,,33
+President/Vice President,,Castle,CST,county,Crawford,,25
+President/Vice President,,McMullin,PEC,county,Crawford,,18
+President/Vice President,,Kahn,Oth,county,Crawford,,7
+President/Vice President,,Vacek,LMN,county,Crawford,,6
+President/Vice President,,De La Fuente,PEC,county,Crawford,,6
+President/Vice President,,La Riva,PSL,county,Crawford,,2
+President/Vice President,,Trump,GOP,county,Clinton,,11249
+President/Vice President,,Clinton,Dem,county,Clinton,,10079
+President/Vice President,,Johnson,Lib,county,Clinton,,819
+President/Vice President,,Stein,Grn,county,Clinton,,183
+President/Vice President,,McMullin,PEC,county,Clinton,,134
+President/Vice President,,Castle,CST,county,Clinton,,105
+President/Vice President,,Vacek,LMN,county,Clinton,,102
+President/Vice President,,Kahn,Oth,county,Clinton,,66
+President/Vice President,,La Riva,PSL,county,Clinton,,6
+President/Vice President,,De La Fuente,PEC,county,Clinton,,5
+President/Vice President,,Trump,GOP,county,Clayton,,5309
+President/Vice President,,Clinton,Dem,county,Clayton,,3236
+President/Vice President,,Johnson,Lib,county,Clayton,,384
+President/Vice President,,Stein,Grn,county,Clayton,,50
+President/Vice President,,McMullin,PEC,county,Clayton,,47
+President/Vice President,,Kahn,Oth,county,Clayton,,30
+President/Vice President,,Vacek,LMN,county,Clayton,,22
+President/Vice President,,Castle,CST,county,Clayton,,16
+President/Vice President,,De La Fuente,PEC,county,Clayton,,3
+President/Vice President,,La Riva,PSL,county,Clayton,,1
+President/Vice President,,Trump,GOP,county,Story,,19111
+President/Vice President,,Clinton,Dem,county,Story,,25085
+President/Vice President,,Johnson,Lib,county,Story,,2963
+President/Vice President,,McMullin,PEC,county,Story,,1037
+President/Vice President,,Stein,Grn,county,Story,,475
+President/Vice President,,Castle,CST,county,Story,,125
+President/Vice President,,Kahn,Oth,county,Story,,61
+President/Vice President,,Vacek,LMN,county,Story,,23
+President/Vice President,,De La Fuente,PEC,county,Story,,15
+President/Vice President,,La Riva,PSL,county,Story,,15
+President/Vice President,,Trump,GOP,county,Clay,,5870
+President/Vice President,,Clinton,Dem,county,Clay,,2246
+President/Vice President,,Johnson,Lib,county,Clay,,286
+President/Vice President,,McMullin,PEC,county,Clay,,58
+President/Vice President,,Stein,Grn,county,Clay,,35
+President/Vice President,,Castle,CST,county,Clay,,25
+President/Vice President,,Kahn,Oth,county,Clay,,13
+President/Vice President,,Vacek,LMN,county,Clay,,6
+President/Vice President,,De La Fuente,PEC,county,Clay,,2
+President/Vice President,,La Riva,PSL,county,Clay,,1
+President/Vice President,,Trump,GOP,county,Winnebago,,3437
+President/Vice President,,Clinton,Dem,county,Winnebago,,1920
+President/Vice President,,Johnson,Lib,county,Winnebago,,218
+President/Vice President,,McMullin,PEC,county,Winnebago,,49
+President/Vice President,,Castle,CST,county,Winnebago,,36
+President/Vice President,,Stein,Grn,county,Winnebago,,34
+President/Vice President,,Kahn,Oth,county,Winnebago,,9
+President/Vice President,,De La Fuente,PEC,county,Winnebago,,7
+President/Vice President,,Vacek,LMN,county,Winnebago,,6
+President/Vice President,,La Riva,PSL,county,Winnebago,,1
+President/Vice President,,Trump,GOP,county,Washington,,6170
+President/Vice President,,Clinton,Dem,county,Washington,,3938
+President/Vice President,,Johnson,Lib,county,Washington,,458
+President/Vice President,,McMullin,PEC,county,Washington,,92
+President/Vice President,,Stein,Grn,county,Washington,,79
+President/Vice President,,Castle,CST,county,Washington,,63
+President/Vice President,,Vacek,LMN,county,Washington,,10
+President/Vice President,,Kahn,Oth,county,Washington,,10
+President/Vice President,,De La Fuente,PEC,county,Washington,,2
+President/Vice President,,La Riva,PSL,county,Washington,,2
+President/Vice President,,Trump,GOP,county,Warren,,14773
+President/Vice President,,Clinton,Dem,county,Warren,,10371
+President/Vice President,,Johnson,Lib,county,Warren,,1270
+President/Vice President,,McMullin,PEC,county,Warren,,192
+President/Vice President,,Castle,CST,county,Warren,,124
+President/Vice President,,Stein,Grn,county,Warren,,122
+President/Vice President,,Kahn,Oth,county,Warren,,28
+President/Vice President,,Vacek,LMN,county,Warren,,17
+President/Vice President,,De La Fuente,PEC,county,Warren,,12
+President/Vice President,,La Riva,PSL,county,Warren,,7
+President/Vice President,,Trump,GOP,county,Webster,,10049
+President/Vice President,,Clinton,Dem,county,Webster,,6293
+President/Vice President,,Johnson,Lib,county,Webster,,568
+President/Vice President,,Stein,Grn,county,Webster,,113
+President/Vice President,,McMullin,PEC,county,Webster,,104
+President/Vice President,,Castle,CST,county,Webster,,64
+President/Vice President,,Vacek,LMN,county,Webster,,24
+President/Vice President,,Kahn,Oth,county,Webster,,16
+President/Vice President,,De La Fuente,PEC,county,Webster,,5
+President/Vice President,,La Riva,PSL,county,Webster,,3
+President/Vice President,,Trump,GOP,county,Wayne,,2069
+President/Vice President,,Clinton,Dem,county,Wayne,,719
+President/Vice President,,Johnson,Lib,county,Wayne,,78
+President/Vice President,,McMullin,PEC,county,Wayne,,20
+President/Vice President,,Stein,Grn,county,Wayne,,17
+President/Vice President,,Castle,CST,county,Wayne,,10
+President/Vice President,,Kahn,Oth,county,Wayne,,4
+President/Vice President,,Vacek,LMN,county,Wayne,,3
+President/Vice President,,De La Fuente,PEC,county,Wayne,,1
+President/Vice President,,La Riva,PSL,county,Wayne,,0
+President/Vice President,,Trump,GOP,county,Lee,,8762
+President/Vice President,,Clinton,Dem,county,Lee,,6195
+President/Vice President,,Johnson,Lib,county,Lee,,502
+President/Vice President,,Stein,Grn,county,Lee,,145
+President/Vice President,,McMullin,PEC,county,Lee,,84
+President/Vice President,,Vacek,LMN,county,Lee,,78
+President/Vice President,,Castle,CST,county,Lee,,77
+President/Vice President,,Kahn,Oth,county,Lee,,38
+President/Vice President,,De La Fuente,PEC,county,Lee,,7
+President/Vice President,,La Riva,PSL,county,Lee,,5
+President/Vice President,,Trump,GOP,county,Dickinson,,6743
+President/Vice President,,Clinton,Dem,county,Dickinson,,3051
+President/Vice President,,Johnson,Lib,county,Dickinson,,291
+President/Vice President,,Stein,Grn,county,Dickinson,,54
+President/Vice President,,McMullin,PEC,county,Dickinson,,49
+President/Vice President,,Castle,CST,county,Dickinson,,31
+President/Vice President,,Vacek,LMN,county,Dickinson,,14
+President/Vice President,,Kahn,Oth,county,Dickinson,,8
+President/Vice President,,De La Fuente,PEC,county,Dickinson,,6
+President/Vice President,,La Riva,PSL,county,Dickinson,,0
+President/Vice President,,Trump,GOP,county,Linn,,48183
+President/Vice President,,Clinton,Dem,county,Linn,,58481
+President/Vice President,,Johnson,Lib,county,Linn,,5510
+President/Vice President,,Stein,Grn,county,Linn,,994
+President/Vice President,,McMullin,PEC,county,Linn,,922
+President/Vice President,,Castle,CST,county,Linn,,265
+President/Vice President,,Kahn,Oth,county,Linn,,133
+President/Vice President,,Vacek,LMN,county,Linn,,119
+President/Vice President,,De La Fuente,PEC,county,Linn,,34
+President/Vice President,,La Riva,PSL,county,Linn,,23
+President/Vice President,,Trump,GOP,county,Louisa,,3060
+President/Vice President,,Clinton,Dem,county,Louisa,,1643
+President/Vice President,,Johnson,Lib,county,Louisa,,134
+President/Vice President,,McMullin,PEC,county,Louisa,,39
+President/Vice President,,Stein,Grn,county,Louisa,,28
+President/Vice President,,Castle,CST,county,Louisa,,26
+President/Vice President,,Kahn,Oth,county,Louisa,,5
+President/Vice President,,Vacek,LMN,county,Louisa,,4
+President/Vice President,,La Riva,PSL,county,Louisa,,3
+President/Vice President,,De La Fuente,PEC,county,Louisa,,1
+President/Vice President,,Trump,GOP,county,Lucas,,2873
+President/Vice President,,Clinton,Dem,county,Lucas,,1236
+President/Vice President,,Johnson,Lib,county,Lucas,,115
+President/Vice President,,Stein,Grn,county,Lucas,,28
+President/Vice President,,Castle,CST,county,Lucas,,18
+President/Vice President,,McMullin,PEC,county,Lucas,,16
+President/Vice President,,Vacek,LMN,county,Lucas,,6
+President/Vice President,,Kahn,Oth,county,Lucas,,4
+President/Vice President,,La Riva,PSL,county,Lucas,,1
+President/Vice President,,De La Fuente,PEC,county,Lucas,,0
+President/Vice President,,Trump,GOP,county,Lyon,,5188
+President/Vice President,,Clinton,Dem,county,Lyon,,917
+President/Vice President,,Johnson,Lib,county,Lyon,,137
+President/Vice President,,McMullin,PEC,county,Lyon,,33
+President/Vice President,,Castle,CST,county,Lyon,,18
+President/Vice President,,Stein,Grn,county,Lyon,,18
+President/Vice President,,Kahn,Oth,county,Lyon,,16
+President/Vice President,,Vacek,LMN,county,Lyon,,7
+President/Vice President,,De La Fuente,PEC,county,Lyon,,1
+President/Vice President,,La Riva,PSL,county,Lyon,,1
+President/Vice President,,Trump,GOP,county,Davis,,2721
+President/Vice President,,Clinton,Dem,county,Davis,,976
+President/Vice President,,Johnson,Lib,county,Davis,,85
+President/Vice President,,Stein,Grn,county,Davis,,25
+President/Vice President,,McMullin,PEC,county,Davis,,20
+President/Vice President,,Castle,CST,county,Davis,,17
+President/Vice President,,Kahn,Oth,county,Davis,,7
+President/Vice President,,Vacek,LMN,county,Davis,,6
+President/Vice President,,De La Fuente,PEC,county,Davis,,1
+President/Vice President,,La Riva,PSL,county,Davis,,0
+President/Vice President,,Trump,GOP,county,Decatur,,2296
+President/Vice President,,Clinton,Dem,county,Decatur,,1201
+President/Vice President,,Johnson,Lib,county,Decatur,,123
+President/Vice President,,Stein,Grn,county,Decatur,,29
+President/Vice President,,Castle,CST,county,Decatur,,26
+President/Vice President,,McMullin,PEC,county,Decatur,,20
+President/Vice President,,Kahn,Oth,county,Decatur,,5
+President/Vice President,,Vacek,LMN,county,Decatur,,1
+President/Vice President,,De La Fuente,PEC,county,Decatur,,1
+President/Vice President,,La Riva,PSL,county,Decatur,,1
+President/Vice President,,Trump,GOP,county,Delaware,,5688
+President/Vice President,,Clinton,Dem,county,Delaware,,2956
+President/Vice President,,Johnson,Lib,county,Delaware,,337
+President/Vice President,,McMullin,PEC,county,Delaware,,47
+President/Vice President,,Stein,Grn,county,Delaware,,40
+President/Vice President,,Kahn,Oth,county,Delaware,,39
+President/Vice President,,Castle,CST,county,Delaware,,38
+President/Vice President,,Vacek,LMN,county,Delaware,,18
+President/Vice President,,La Riva,PSL,county,Delaware,,2
+President/Vice President,,De La Fuente,PEC,county,Delaware,,0
+President/Vice President,,Trump,GOP,county,Des Moines,,9479
+President/Vice President,,Clinton,Dem,county,Des Moines,,8178
+President/Vice President,,Johnson,Lib,county,Des Moines,,633
+President/Vice President,,Stein,Grn,county,Des Moines,,132
+President/Vice President,,McMullin,PEC,county,Des Moines,,130
+President/Vice President,,Castle,CST,county,Des Moines,,73
+President/Vice President,,Kahn,Oth,county,Des Moines,,40
+President/Vice President,,Vacek,LMN,county,Des Moines,,36
+President/Vice President,,De La Fuente,PEC,county,Des Moines,,8
+President/Vice President,,La Riva,PSL,county,Des Moines,,4
+President/Vice President,,Trump,GOP,county,Johnson,,20993
+President/Vice President,,Clinton,Dem,county,Johnson,,49942
+President/Vice President,,Johnson,Lib,county,Johnson,,2743
+President/Vice President,,Stein,Grn,county,Johnson,,874
+President/Vice President,,McMullin,PEC,county,Johnson,,711
+President/Vice President,,Castle,CST,county,Johnson,,130
+President/Vice President,,Vacek,LMN,county,Johnson,,124
+President/Vice President,,Kahn,Oth,county,Johnson,,67
+President/Vice President,,La Riva,PSL,county,Johnson,,35
+President/Vice President,,De La Fuente,PEC,county,Johnson,,18
+President/Vice President,,Trump,GOP,county,Jefferson,,3738
+President/Vice President,,Clinton,Dem,county,Jefferson,,3702
+President/Vice President,,Stein,Grn,county,Jefferson,,255
+President/Vice President,,Johnson,Lib,county,Jefferson,,246
+President/Vice President,,McMullin,PEC,county,Jefferson,,25
+President/Vice President,,Castle,CST,county,Jefferson,,22
+President/Vice President,,Kahn,Oth,county,Jefferson,,6
+President/Vice President,,Vacek,LMN,county,Jefferson,,5
+President/Vice President,,La Riva,PSL,county,Jefferson,,2
+President/Vice President,,De La Fuente,PEC,county,Jefferson,,0
+President/Vice President,,Trump,GOP,county,Keokuk,,3385
+President/Vice President,,Clinton,Dem,county,Keokuk,,1265
+President/Vice President,,Johnson,Lib,county,Keokuk,,139
+President/Vice President,,Stein,Grn,county,Keokuk,,28
+President/Vice President,,Castle,CST,county,Keokuk,,17
+President/Vice President,,McMullin,PEC,county,Keokuk,,15
+President/Vice President,,Kahn,Oth,county,Keokuk,,6
+President/Vice President,,Vacek,LMN,county,Keokuk,,1
+President/Vice President,,De La Fuente,PEC,county,Keokuk,,1
+President/Vice President,,La Riva,PSL,county,Keokuk,,1
+President/Vice President,,Trump,GOP,county,Jones,,5718
+President/Vice President,,Clinton,Dem,county,Jones,,3779
+President/Vice President,,Johnson,Lib,county,Jones,,305
+President/Vice President,,Stein,Grn,county,Jones,,62
+President/Vice President,,McMullin,PEC,county,Jones,,49
+President/Vice President,,Castle,CST,county,Jones,,40
+President/Vice President,,Vacek,LMN,county,Jones,,31
+President/Vice President,,Kahn,Oth,county,Jones,,24
+President/Vice President,,La Riva,PSL,county,Jones,,2
+President/Vice President,,De La Fuente,PEC,county,Jones,,1
+President/Vice President,,Trump,GOP,county,Kossuth,,5637
+President/Vice President,,Clinton,Dem,county,Kossuth,,2529
+President/Vice President,,Johnson,Lib,county,Kossuth,,193
+President/Vice President,,McMullin,PEC,county,Kossuth,,36
+President/Vice President,,Stein,Grn,county,Kossuth,,33
+President/Vice President,,Kahn,Oth,county,Kossuth,,28
+President/Vice President,,Vacek,LMN,county,Kossuth,,25
+President/Vice President,,Castle,CST,county,Kossuth,,22
+President/Vice President,,De La Fuente,PEC,county,Kossuth,,1
+President/Vice President,,La Riva,PSL,county,Kossuth,,1
+President/Vice President,,Trump,GOP,county,Cass,,4755
+President/Vice President,,Clinton,Dem,county,Cass,,1946
+President/Vice President,,Johnson,Lib,county,Cass,,206
+President/Vice President,,Stein,Grn,county,Cass,,52
+President/Vice President,,McMullin,PEC,county,Cass,,50
+President/Vice President,,Castle,CST,county,Cass,,25
+President/Vice President,,Kahn,Oth,county,Cass,,13
+President/Vice President,,Vacek,LMN,county,Cass,,8
+President/Vice President,,De La Fuente,PEC,county,Cass,,0
+President/Vice President,,La Riva,PSL,county,Cass,,0
+President/Vice President,,Trump,GOP,county,Calhoun,,3466
+President/Vice President,,Clinton,Dem,county,Calhoun,,1396
+President/Vice President,,Johnson,Lib,county,Calhoun,,172
+President/Vice President,,Castle,CST,county,Calhoun,,29
+President/Vice President,,Stein,Grn,county,Calhoun,,18
+President/Vice President,,McMullin,PEC,county,Calhoun,,17
+President/Vice President,,Kahn,Oth,county,Calhoun,,4
+President/Vice President,,Vacek,LMN,county,Calhoun,,2
+President/Vice President,,La Riva,PSL,county,Calhoun,,1
+President/Vice President,,De La Fuente,PEC,county,Calhoun,,0
+President/Vice President,,Trump,GOP,county,Carroll,,6627
+President/Vice President,,Clinton,Dem,county,Carroll,,3305
+President/Vice President,,Johnson,Lib,county,Carroll,,317
+President/Vice President,,Stein,Grn,county,Carroll,,58
+President/Vice President,,McMullin,PEC,county,Carroll,,54
+President/Vice President,,Castle,CST,county,Carroll,,41
+President/Vice President,,Kahn,Oth,county,Carroll,,19
+President/Vice President,,Vacek,LMN,county,Carroll,,13
+President/Vice President,,De La Fuente,PEC,county,Carroll,,1
+President/Vice President,,La Riva,PSL,county,Carroll,,0
+President/Vice President,,Trump,GOP,county,Buena Vista,,4895
+President/Vice President,,Clinton,Dem,county,Buena Vista,,2851
+President/Vice President,,Johnson,Lib,county,Buena Vista,,287
+President/Vice President,,McMullin,PEC,county,Buena Vista,,58
+President/Vice President,,Stein,Grn,county,Buena Vista,,47
+President/Vice President,,Castle,CST,county,Buena Vista,,23
+President/Vice President,,Kahn,Oth,county,Buena Vista,,13
+President/Vice President,,Vacek,LMN,county,Buena Vista,,4
+President/Vice President,,De La Fuente,PEC,county,Buena Vista,,1
+President/Vice President,,La Riva,PSL,county,Buena Vista,,0
+President/Vice President,,Trump,GOP,county,Butler,,4918
+President/Vice President,,Clinton,Dem,county,Butler,,2163
+President/Vice President,,Johnson,Lib,county,Butler,,217
+President/Vice President,,McMullin,PEC,county,Butler,,50
+President/Vice President,,Castle,CST,county,Butler,,47
+President/Vice President,,Stein,Grn,county,Butler,,43
+President/Vice President,,Vacek,LMN,county,Butler,,11
+President/Vice President,,Kahn,Oth,county,Butler,,5
+President/Vice President,,De La Fuente,PEC,county,Butler,,3
+President/Vice President,,La Riva,PSL,county,Butler,,0
+President/Vice President,,Trump,GOP,county,Hardin,,5231
+President/Vice President,,Clinton,Dem,county,Hardin,,2774
+President/Vice President,,Johnson,Lib,county,Hardin,,294
+President/Vice President,,McMullin,PEC,county,Hardin,,68
+President/Vice President,,Stein,Grn,county,Hardin,,28
+President/Vice President,,Kahn,Oth,county,Hardin,,9
+President/Vice President,,Castle,CST,county,Hardin,,8
+President/Vice President,,De La Fuente,PEC,county,Hardin,,4
+President/Vice President,,La Riva,PSL,county,Hardin,,4
+President/Vice President,,Vacek,LMN,county,Hardin,,3
+President/Vice President,,Trump,GOP,county,Hancock,,3972
+President/Vice President,,Clinton,Dem,county,Hancock,,1582
+President/Vice President,,Johnson,Lib,county,Hancock,,165
+President/Vice President,,McMullin,PEC,county,Hancock,,29
+President/Vice President,,Castle,CST,county,Hancock,,23
+President/Vice President,,Stein,Grn,county,Hancock,,22
+President/Vice President,,Kahn,Oth,county,Hancock,,13
+President/Vice President,,Vacek,LMN,county,Hancock,,8
+President/Vice President,,De La Fuente,PEC,county,Hancock,,1
+President/Vice President,,La Riva,PSL,county,Hancock,,0
+President/Vice President,,Trump,GOP,county,Henry,,5764
+President/Vice President,,Clinton,Dem,county,Henry,,2897
+President/Vice President,,Johnson,Lib,county,Henry,,336
+President/Vice President,,Stein,Grn,county,Henry,,113
+President/Vice President,,McMullin,PEC,county,Henry,,99
+President/Vice President,,Castle,CST,county,Henry,,40
+President/Vice President,,Vacek,LMN,county,Henry,,15
+President/Vice President,,Kahn,Oth,county,Henry,,14
+President/Vice President,,De La Fuente,PEC,county,Henry,,4
+President/Vice President,,La Riva,PSL,county,Henry,,4
+President/Vice President,,Trump,GOP,county,Harrison,,4892
+President/Vice President,,Clinton,Dem,county,Harrison,,2123
+President/Vice President,,Johnson,Lib,county,Harrison,,209
+President/Vice President,,Stein,Grn,county,Harrison,,50
+President/Vice President,,McMullin,PEC,county,Harrison,,39
+President/Vice President,,Castle,CST,county,Harrison,,37
+President/Vice President,,Kahn,Oth,county,Harrison,,17
+President/Vice President,,Vacek,LMN,county,Harrison,,7
+President/Vice President,,De La Fuente,PEC,county,Harrison,,3
+President/Vice President,,La Riva,PSL,county,Harrison,,1
+President/Vice President,,Trump,GOP,county,Howard,,2611
+President/Vice President,,Clinton,Dem,county,Howard,,1674
+President/Vice President,,Johnson,Lib,county,Howard,,130
+President/Vice President,,Stein,Grn,county,Howard,,38
+President/Vice President,,Castle,CST,county,Howard,,15
+President/Vice President,,McMullin,PEC,county,Howard,,14
+President/Vice President,,Vacek,LMN,county,Howard,,13
+President/Vice President,,Kahn,Oth,county,Howard,,11
+President/Vice President,,La Riva,PSL,county,Howard,,1
+President/Vice President,,De La Fuente,PEC,county,Howard,,0
+President/Vice President,,Trump,GOP,county,Muscatine,,9549
+President/Vice President,,Clinton,Dem,county,Muscatine,,8284
+President/Vice President,,Johnson,Lib,county,Muscatine,,741
+President/Vice President,,Stein,Grn,county,Muscatine,,180
+President/Vice President,,McMullin,PEC,county,Muscatine,,136
+President/Vice President,,Castle,CST,county,Muscatine,,86
+President/Vice President,,Vacek,LMN,county,Muscatine,,60
+President/Vice President,,Kahn,Oth,county,Muscatine,,41
+President/Vice President,,La Riva,PSL,county,Muscatine,,6
+President/Vice President,,De La Fuente,PEC,county,Muscatine,,3
+President/Vice President,,Trump,GOP,county,Montgomery,,3431
+President/Vice President,,Clinton,Dem,county,Montgomery,,1312
+President/Vice President,,Johnson,Lib,county,Montgomery,,152
+President/Vice President,,Stein,Grn,county,Montgomery,,38
+President/Vice President,,McMullin,PEC,county,Montgomery,,27
+President/Vice President,,Castle,CST,county,Montgomery,,21
+President/Vice President,,Kahn,Oth,county,Montgomery,,8
+President/Vice President,,Vacek,LMN,county,Montgomery,,5
+President/Vice President,,La Riva,PSL,county,Montgomery,,3
+President/Vice President,,De La Fuente,PEC,county,Montgomery,,1
+President/Vice President,,Trump,GOP,county,Monroe,,2635
+President/Vice President,,Clinton,Dem,county,Monroe,,1053
+President/Vice President,,Johnson,Lib,county,Monroe,,104
+President/Vice President,,Castle,CST,county,Monroe,,20
+President/Vice President,,McMullin,PEC,county,Monroe,,14
+President/Vice President,,Stein,Grn,county,Monroe,,13
+President/Vice President,,Vacek,LMN,county,Monroe,,3
+President/Vice President,,Kahn,Oth,county,Monroe,,1
+President/Vice President,,De La Fuente,PEC,county,Monroe,,1
+President/Vice President,,La Riva,PSL,county,Monroe,,0
+President/Vice President,,Trump,GOP,county,Monona,,3115
+President/Vice President,,Clinton,Dem,county,Monona,,1244
+President/Vice President,,Johnson,Lib,county,Monona,,112
+President/Vice President,,Stein,Grn,county,Monona,,22
+President/Vice President,,McMullin,PEC,county,Monona,,12
+President/Vice President,,Castle,CST,county,Monona,,10
+President/Vice President,,Vacek,LMN,county,Monona,,4
+President/Vice President,,Kahn,Oth,county,Monona,,4
+President/Vice President,,La Riva,PSL,county,Monona,,2
+President/Vice President,,De La Fuente,PEC,county,Monona,,0
+President/Vice President,,Trump,GOP,county,Mitchell,,3180
+President/Vice President,,Clinton,Dem,county,Mitchell,,1879
+President/Vice President,,Johnson,Lib,county,Mitchell,,209
+President/Vice President,,Stein,Grn,county,Mitchell,,28
+President/Vice President,,McMullin,PEC,county,Mitchell,,24
+President/Vice President,,Castle,CST,county,Mitchell,,16
+President/Vice President,,Kahn,Oth,county,Mitchell,,13
+President/Vice President,,Vacek,LMN,county,Mitchell,,10
+President/Vice President,,De La Fuente,PEC,county,Mitchell,,1
+President/Vice President,,La Riva,PSL,county,Mitchell,,0
+President/Vice President,,Trump,GOP,county,Clarke,,2706
+President/Vice President,,Clinton,Dem,county,Clarke,,1463
+President/Vice President,,Johnson,Lib,county,Clarke,,159
+President/Vice President,,Castle,CST,county,Clarke,,26
+President/Vice President,,McMullin,PEC,county,Clarke,,20
+President/Vice President,,Stein,Grn,county,Clarke,,18
+President/Vice President,,Kahn,Oth,county,Clarke,,9
+President/Vice President,,Vacek,LMN,county,Clarke,,4
+President/Vice President,,De La Fuente,PEC,county,Clarke,,0
+President/Vice President,,La Riva,PSL,county,Clarke,,0
+President/Vice President,,Trump,GOP,county,Chickasaw,,3739
+President/Vice President,,Clinton,Dem,county,Chickasaw,,2264
+President/Vice President,,Johnson,Lib,county,Chickasaw,,236
+President/Vice President,,Stein,Grn,county,Chickasaw,,48
+President/Vice President,,Castle,CST,county,Chickasaw,,33
+President/Vice President,,McMullin,PEC,county,Chickasaw,,28
+President/Vice President,,Kahn,Oth,county,Chickasaw,,10
+President/Vice President,,Vacek,LMN,county,Chickasaw,,5
+President/Vice President,,La Riva,PSL,county,Chickasaw,,3
+President/Vice President,,De La Fuente,PEC,county,Chickasaw,,1
+President/Vice President,,Trump,GOP,county,Cherokee,,4188
+President/Vice President,,Clinton,Dem,county,Cherokee,,1676
+President/Vice President,,Johnson,Lib,county,Cherokee,,206
+President/Vice President,,McMullin,PEC,county,Cherokee,,41
+President/Vice President,,Castle,CST,county,Cherokee,,29
+President/Vice President,,Stein,Grn,county,Cherokee,,29
+President/Vice President,,Kahn,Oth,county,Cherokee,,9
+President/Vice President,,Vacek,LMN,county,Cherokee,,7
+President/Vice President,,De La Fuente,PEC,county,Cherokee,,1
+President/Vice President,,La Riva,PSL,county,Cherokee,,0
+President/Vice President,,Trump,GOP,county,Cerro Gordo,,11583
+President/Vice President,,Clinton,Dem,county,Cerro Gordo,,9840
+President/Vice President,,Johnson,Lib,county,Cerro Gordo,,843
+President/Vice President,,McMullin,PEC,county,Cerro Gordo,,141
+President/Vice President,,Stein,Grn,county,Cerro Gordo,,128
+President/Vice President,,Kahn,Oth,county,Cerro Gordo,,42
+President/Vice President,,Castle,CST,county,Cerro Gordo,,25
+President/Vice President,,Vacek,LMN,county,Cerro Gordo,,21
+President/Vice President,,De La Fuente,PEC,county,Cerro Gordo,,8
+President/Vice President,,La Riva,PSL,county,Cerro Gordo,,2
+President/Vice President,,Trump,GOP,county,Cedar,,5275
+President/Vice President,,Clinton,Dem,county,Cedar,,3578
+President/Vice President,,Johnson,Lib,county,Cedar,,362
+President/Vice President,,Stein,Grn,county,Cedar,,70
+President/Vice President,,McMullin,PEC,county,Cedar,,38
+President/Vice President,,Castle,CST,county,Cedar,,35
+President/Vice President,,Vacek,LMN,county,Cedar,,16
+President/Vice President,,Kahn,Oth,county,Cedar,,10
+President/Vice President,,De La Fuente,PEC,county,Cedar,,2
+President/Vice President,,La Riva,PSL,county,Cedar,,0
+President/Vice President,,Trump,GOP,county,Jasper,,10556
+President/Vice President,,Clinton,Dem,county,Jasper,,7108
+President/Vice President,,Johnson,Lib,county,Jasper,,715
+President/Vice President,,Stein,Grn,county,Jasper,,95
+President/Vice President,,McMullin,PEC,county,Jasper,,91
+President/Vice President,,Castle,CST,county,Jasper,,90
+President/Vice President,,Vacek,LMN,county,Jasper,,76
+President/Vice President,,Kahn,Oth,county,Jasper,,39
+President/Vice President,,De La Fuente,PEC,county,Jasper,,4
+President/Vice President,,La Riva,PSL,county,Jasper,,2
+President/Vice President,,Trump,GOP,county,Iowa,,5193
+President/Vice President,,Clinton,Dem,county,Iowa,,3070
+President/Vice President,,Johnson,Lib,county,Iowa,,315
+President/Vice President,,Castle,CST,county,Iowa,,68
+President/Vice President,,Stein,Grn,county,Iowa,,61
+President/Vice President,,McMullin,PEC,county,Iowa,,54
+President/Vice President,,Kahn,Oth,county,Iowa,,13
+President/Vice President,,Vacek,LMN,county,Iowa,,9
+President/Vice President,,De La Fuente,PEC,county,Iowa,,6
+President/Vice President,,La Riva,PSL,county,Iowa,,0
+President/Vice President,,Trump,GOP,county,Jackson,,5821
+President/Vice President,,Clinton,Dem,county,Jackson,,3837
+President/Vice President,,Johnson,Lib,county,Jackson,,318
+President/Vice President,,Stein,Grn,county,Jackson,,85
+President/Vice President,,McMullin,PEC,county,Jackson,,55
+President/Vice President,,Castle,CST,county,Jackson,,53
+President/Vice President,,Vacek,LMN,county,Jackson,,14
+President/Vice President,,Kahn,Oth,county,Jackson,,12
+President/Vice President,,De La Fuente,PEC,county,Jackson,,7
+President/Vice President,,La Riva,PSL,county,Jackson,,2
+President/Vice President,,Trump,GOP,county,Humboldt,,3564
+President/Vice President,,Clinton,Dem,county,Humboldt,,1251
+President/Vice President,,Johnson,Lib,county,Humboldt,,127
+President/Vice President,,McMullin,PEC,county,Humboldt,,40
+President/Vice President,,Stein,Grn,county,Humboldt,,20
+President/Vice President,,Castle,CST,county,Humboldt,,13
+President/Vice President,,Kahn,Oth,county,Humboldt,,8
+President/Vice President,,Vacek,LMN,county,Humboldt,,6
+President/Vice President,,De La Fuente,PEC,county,Humboldt,,2
+President/Vice President,,La Riva,PSL,county,Humboldt,,2
+President/Vice President,,Trump,GOP,county,Ida,,2655
+President/Vice President,,Clinton,Dem,county,Ida,,792
+President/Vice President,,Johnson,Lib,county,Ida,,103
+President/Vice President,,McMullin,PEC,county,Ida,,15
+President/Vice President,,Stein,Grn,county,Ida,,9
+President/Vice President,,Castle,CST,county,Ida,,8
+President/Vice President,,Vacek,LMN,county,Ida,,4
+President/Vice President,,Kahn,Oth,county,Ida,,2
+President/Vice President,,La Riva,PSL,county,Ida,,2
+President/Vice President,,De La Fuente,PEC,county,Ida,,0
+President/Vice President,,Trump,GOP,county,Mills,,5050
+President/Vice President,,Clinton,Dem,county,Mills,,2080
+President/Vice President,,Johnson,Lib,county,Mills,,303
+President/Vice President,,McMullin,PEC,county,Mills,,76
+President/Vice President,,Stein,Grn,county,Mills,,56
+President/Vice President,,Castle,CST,county,Mills,,26
+President/Vice President,,Vacek,LMN,county,Mills,,8
+President/Vice President,,Kahn,Oth,county,Mills,,7
+President/Vice President,,De La Fuente,PEC,county,Mills,,2
+President/Vice President,,La Riva,PSL,county,Mills,,0
+President/Vice President,,Trump,GOP,county,Madison,,5336
+President/Vice President,,Clinton,Dem,county,Madison,,2666
+President/Vice President,,Johnson,Lib,county,Madison,,344
+President/Vice President,,McMullin,PEC,county,Madison,,81
+President/Vice President,,Stein,Grn,county,Madison,,41
+President/Vice President,,Castle,CST,county,Madison,,37
+President/Vice President,,Kahn,Oth,county,Madison,,11
+President/Vice President,,Vacek,LMN,county,Madison,,5
+President/Vice President,,De La Fuente,PEC,county,Madison,,1
+President/Vice President,,La Riva,PSL,county,Madison,,1
+President/Vice President,,Trump,GOP,county,Mahaska,,7404
+President/Vice President,,Clinton,Dem,county,Mahaska,,2606
+President/Vice President,,Johnson,Lib,county,Mahaska,,316
+President/Vice President,,McMullin,PEC,county,Mahaska,,73
+President/Vice President,,Stein,Grn,county,Mahaska,,38
+President/Vice President,,Castle,CST,county,Mahaska,,35
+President/Vice President,,Kahn,Oth,county,Mahaska,,13
+President/Vice President,,Vacek,LMN,county,Mahaska,,9
+President/Vice President,,De La Fuente,PEC,county,Mahaska,,0
+President/Vice President,,La Riva,PSL,county,Mahaska,,0
+President/Vice President,,Trump,GOP,county,Marion,,10940
+President/Vice President,,Clinton,Dem,county,Marion,,5469
+President/Vice President,,Johnson,Lib,county,Marion,,703
+President/Vice President,,McMullin,PEC,county,Marion,,203
+President/Vice President,,Castle,CST,county,Marion,,111
+President/Vice President,,Stein,Grn,county,Marion,,73
+President/Vice President,,Kahn,Oth,county,Marion,,28
+President/Vice President,,Vacek,LMN,county,Marion,,19
+President/Vice President,,De La Fuente,PEC,county,Marion,,7
+President/Vice President,,La Riva,PSL,county,Marion,,1
+President/Vice President,,Trump,GOP,county,Marshall,,9125
+President/Vice President,,Clinton,Dem,county,Marshall,,7623
+President/Vice President,,Johnson,Lib,county,Marshall,,576
+President/Vice President,,Stein,Grn,county,Marshall,,117
+President/Vice President,,McMullin,PEC,county,Marshall,,104
+President/Vice President,,Castle,CST,county,Marshall,,77
+President/Vice President,,Vacek,LMN,county,Marshall,,34
+President/Vice President,,Kahn,Oth,county,Marshall,,33
+President/Vice President,,La Riva,PSL,county,Marshall,,7
+President/Vice President,,De La Fuente,PEC,county,Marshall,,4
+President/Vice President,,Trump,GOP,county,Audubon,,2135
+President/Vice President,,Clinton,Dem,county,Audubon,,1079
+President/Vice President,,Johnson,Lib,county,Audubon,,106
+President/Vice President,,Stein,Grn,county,Audubon,,24
+President/Vice President,,Castle,CST,county,Audubon,,17
+President/Vice President,,McMullin,PEC,county,Audubon,,9
+President/Vice President,,Vacek,LMN,county,Audubon,,4
+President/Vice President,,Kahn,Oth,county,Audubon,,2
+President/Vice President,,De La Fuente,PEC,county,Audubon,,2
+President/Vice President,,La Riva,PSL,county,Audubon,,1
+President/Vice President,,Trump,GOP,county,Adams,,1393
+President/Vice President,,Clinton,Dem,county,Adams,,565
+President/Vice President,,Johnson,Lib,county,Adams,,93
+President/Vice President,,Castle,CST,county,Adams,,13
+President/Vice President,,Stein,Grn,county,Adams,,9
+President/Vice President,,McMullin,PEC,county,Adams,,6
+President/Vice President,,Vacek,LMN,county,Adams,,1
+President/Vice President,,Kahn,Oth,county,Adams,,1
+President/Vice President,,De La Fuente,PEC,county,Adams,,1
+President/Vice President,,La Riva,PSL,county,Adams,,0
+President/Vice President,,Trump,GOP,county,Adair,,2456
+President/Vice President,,Clinton,Dem,county,Adair,,1127
+President/Vice President,,Johnson,Lib,county,Adair,,125
+President/Vice President,,Stein,Grn,county,Adair,,13
+President/Vice President,,Castle,CST,county,Adair,,10
+President/Vice President,,Vacek,LMN,county,Adair,,10
+President/Vice President,,McMullin,PEC,county,Adair,,10
+President/Vice President,,Kahn,Oth,county,Adair,,5
+President/Vice President,,De La Fuente,PEC,county,Adair,,3
+President/Vice President,,La Riva,PSL,county,Adair,,0
+President/Vice President,,Trump,GOP,county,Appanoose,,4031
+President/Vice President,,Clinton,Dem,county,Appanoose,,1813
+President/Vice President,,Johnson,Lib,county,Appanoose,,139
+President/Vice President,,Stein,Grn,county,Appanoose,,42
+President/Vice President,,Castle,CST,county,Appanoose,,25
+President/Vice President,,McMullin,PEC,county,Appanoose,,24
+President/Vice President,,Vacek,LMN,county,Appanoose,,11
+President/Vice President,,Kahn,Oth,county,Appanoose,,8
+President/Vice President,,La Riva,PSL,county,Appanoose,,2
+President/Vice President,,De La Fuente,PEC,county,Appanoose,,1
+President/Vice President,,Trump,GOP,county,Allamakee,,4072
+President/Vice President,,Clinton,Dem,county,Allamakee,,2409
+President/Vice President,,Johnson,Lib,county,Allamakee,,224
+President/Vice President,,Stein,Grn,county,Allamakee,,46
+President/Vice President,,Castle,CST,county,Allamakee,,35
+President/Vice President,,McMullin,PEC,county,Allamakee,,34
+President/Vice President,,Kahn,Oth,county,Allamakee,,10
+President/Vice President,,Vacek,LMN,county,Allamakee,,5
+President/Vice President,,De La Fuente,PEC,county,Allamakee,,1
+President/Vice President,,La Riva,PSL,county,Allamakee,,1
+President/Vice President,,Total,,county,Adair,,3759
+President/Vice President,,Total,,county,Adams,,2082
+President/Vice President,,Total,,county,Allamakee,,6837
+President/Vice President,,Total,,county,Appanoose,,6096
+President/Vice President,,Total,,county,Audubon,,3379
+President/Vice President,,Total,,county,Benton,,13690
+President/Vice President,,Total,,county,Black Hawk,,63221
+President/Vice President,,Total,,county,Boone,,13984
+President/Vice President,,Total,,county,Bremer,,13350
+President/Vice President,,Total,,county,Buchanan,,10137
+President/Vice President,,Total,,county,Buena Vista,,8179
+President/Vice President,,Total,,county,Butler,,7457
+President/Vice President,,Total,,county,Calhoun,,5105
+President/Vice President,,Total,,county,Carroll,,10435
+President/Vice President,,Total,,county,Cass,,7055
+President/Vice President,,Total,,county,Cedar,,9386
+President/Vice President,,Total,,county,Cerro Gordo,,22633
+President/Vice President,,Total,,county,Cherokee,,6186
+President/Vice President,,Total,,county,Chickasaw,,6367
+President/Vice President,,Total,,county,Clarke,,4405
+President/Vice President,,Total,,county,Clay,,8542
+President/Vice President,,Total,,county,Clayton,,9098
+President/Vice President,,Total,,county,Clinton,,22748
+President/Vice President,,Total,,county,Crawford,,6862
+President/Vice President,,Total,,county,Dallas,,37617
+President/Vice President,,Total,,county,Davis,,3858
+President/Vice President,,Total,,county,Decatur,,3703
+President/Vice President,,Total,,county,Delaware,,9165
+President/Vice President,,Total,,county,Des Moines,,18713
+President/Vice President,,Total,,county,Dickinson,,10247
+President/Vice President,,Total,,county,Dubuque,,49037
+President/Vice President,,Total,,county,Emmet,,4707
+President/Vice President,,Total,,county,Fayette,,9813
+President/Vice President,,Total,,county,Floyd,,7985
+President/Vice President,,Total,,county,Franklin,,4915
+President/Vice President,,Total,,county,Fremont,,3554
+President/Vice President,,Total,,county,Greene,,4762
+President/Vice President,,Total,,county,Grundy,,6766
+President/Vice President,,Total,,county,Guthrie,,5654
+President/Vice President,,Total,,county,Hamilton,,7589
+President/Vice President,,Total,,county,Hancock,,5815
+President/Vice President,,Total,,county,Hardin,,8423
+President/Vice President,,Total,,county,Harrison,,7378
+President/Vice President,,Total,,county,Henry,,9286
+President/Vice President,,Total,,county,Howard,,4507
+President/Vice President,,Total,,county,Humboldt,,5033
+President/Vice President,,Total,,county,Ida,,3590
+President/Vice President,,Total,,county,Iowa,,8789
+President/Vice President,,Total,,county,Jackson,,10204
+President/Vice President,,Total,,county,Jasper,,18776
+President/Vice President,,Total,,county,Jefferson,,8001
+President/Vice President,,Total,,county,Johnson,,75637
+President/Vice President,,Total,,county,Jones,,10011
+President/Vice President,,Total,,county,Keokuk,,4858
+President/Vice President,,Total,,county,Kossuth,,8505
+President/Vice President,,Total,,county,Lee,,15893
+President/Vice President,,Total,,county,Linn,,114664
+President/Vice President,,Total,,county,Louisa,,4943
+President/Vice President,,Total,,county,Lucas,,4297
+President/Vice President,,Total,,county,Lyon,,6336
+President/Vice President,,Total,,county,Madison,,8523
+President/Vice President,,Total,,county,Mahaska,,10494
+President/Vice President,,Total,,county,Marion,,17554
+President/Vice President,,Total,,county,Marshall,,17700
+President/Vice President,,Total,,county,Mills,,7608
+President/Vice President,,Total,,county,Mitchell,,5360
+President/Vice President,,Total,,county,Monona,,4525
+President/Vice President,,Total,,county,Monroe,,3844
+President/Vice President,,Total,,county,Montgomery,,4998
+President/Vice President,,Total,,county,Muscatine,,19086
+President/Vice President,,Total,,county,O'Brien,,7348
+President/Vice President,,Total,,county,Osceola,,3197
+President/Vice President,,Total,,county,Page,,6968
+President/Vice President,,Total,,county,Palo Alto,,4674
+President/Vice President,,Total,,county,Plymouth,,13057
+President/Vice President,,Total,,county,Pocahontas,,3831
+President/Vice President,,Total,,county,Polk,,228420
+President/Vice President,,Total,,county,Pottawattamie,,42226
+President/Vice President,,Total,,county,Poweshiek,,9693
+President/Vice President,,Total,,county,Ringgold,,2684
+President/Vice President,,Total,,county,Sac,,5158
+President/Vice President,,Total,,county,Scott,,84878
+President/Vice President,,Total,,county,Shelby,,6270
+President/Vice President,,Total,,county,Sioux,,17989
+President/Vice President,,Total,,county,Story,,48910
+President/Vice President,,Total,,county,Tama,,8636
+President/Vice President,,Total,,county,Taylor,,3003
+President/Vice President,,Total,,county,Union,,5768
+President/Vice President,,Total,,county,Van Buren,,3526
+President/Vice President,,Total,,county,Wapello,,14996
+President/Vice President,,Total,,county,Warren,,26916
+President/Vice President,,Total,,county,Washington,,10824
+President/Vice President,,Total,,county,Wayne,,2921
+President/Vice President,,Total,,county,Webster,,17239
+President/Vice President,,Total,,county,Winnebago,,5717
+President/Vice President,,Total,,county,Winneshiek,,11217
+President/Vice President,,Total,,county,Woodbury,,42933
+President/Vice President,,Total,,county,Worth,,4216
+President/Vice President,,Total,,county,Wright,,5949

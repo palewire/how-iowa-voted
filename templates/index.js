@@ -34,7 +34,7 @@ app.races = {
         "dem": "Hillary Clinton",
         "gop": "Donald Trump",
         "winner": "gop",
-        "margin": 147647,
+        "margin": 148133,
     }
 };
 app.addDropShadow = function (svg) {
@@ -129,7 +129,8 @@ app.boot = function () {
       .defer(d3.json, "/static/2004.json")
       .defer(d3.json, "/static/2008.json")
       .defer(d3.json, "/static/2012.json")
-      .await(function(error, topology, results2000, results2004, results2008, results2012) {
+      .defer(d3.json, "/static/2016.json")
+      .await(function(error, topology, results2000, results2004, results2008, results2012, results2016) {
           if (error) throw error;
 
           app.topology = topology;
@@ -138,14 +139,17 @@ app.boot = function () {
              d3.values(results2000),
              d3.values(results2004),
              d3.values(results2008),
-             d3.values(results2012)
+             d3.values(results2012),
+             d3.values(results2016)
           ));
 
           app.races[2000].results = results2000;
           app.races[2004].results = results2004;
           app.races[2008].results = results2008;
           app.races[2012].results = results2012;
+          app.races[2016].results = results2016;
 
+          app.createMap(app.races[2016]);
           app.createMap(app.races[2012]);
           app.createMap(app.races[2008]);
           app.createMap(app.races[2004]);
