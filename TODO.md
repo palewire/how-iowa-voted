@@ -1,7 +1,8 @@
+- [ ] Back to GitHub
+- [ ] Social media metadata
 - [ ] Hover effects
+- [ ] Bubble key and party legends
+- [ ] ring note annotations
+- [ ] Cloropleth alternative maps you can toggle to
 - [ ] Mini multiples for each candidate
 - [ ] Corum style squares
-- [ ] Bubble key and party legends
-- [ ] Top line results for each race
-- [ ] ring note annotations
-- [ ] Table below the map with all the county results
