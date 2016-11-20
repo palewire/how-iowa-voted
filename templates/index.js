@@ -199,6 +199,8 @@ app.createTable = function (race) {
         }
       }
     );
+    race.selector.append("div")
+      .attr("class", "divider");
 };
 app.boot = function () {
     d3.select(window).on("resize", app.fitMaps);
