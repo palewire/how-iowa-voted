@@ -3,29 +3,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/static/css/materialize.min.css"  media="screen,projection"/>
     <style type="text/css">
         {% include "index.css" %}
     </style>
 </head>
 <body>
-    <article>
+    <article class="container">
         <header>
             <h1>How Iowa voted</h1>
-            <p class="byline">
+            <p class="byline flow-text md-body-1">
                 By <a href="http://palewi.re/who-is-ben-welsh/">Ben Welsh</a>
                 &#8226;
                 Nov. 19, 2016
             </p>
-            <p class="description">
+            <p class="description flow-text">
                 Results from Iowa's 99 counties in the last five presidential elections.
             </p>
         </header>
         <section id="maps">
             <section id="map-2016" class="cycle section"></section>
+            <div class="divider"></div>
             <section id="map-2012" class="cycle section"></section>
+            <div class="divider"></div>
             <section id="map-2008" class="cycle section"></section>
+            <div class="divider"></div>
             <section id="map-2004" class="cycle section"></section>
+            <div class="divider"></div>
             <section id="map-2000" class="cycle section"></section>
+            <div class="divider"></div>
         </section>
         <section id="sources">
             <p>Sources: OpenElections, Iowa Secretary of State, U.S. Census</p>

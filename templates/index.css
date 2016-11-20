@@ -1,59 +1,23 @@
-article {
-    max-width: 960px;
+article.container {
     margin: 20px auto;
-    font-family: sans;
-    font-size: 18px;
-}
-header {
-    margin: 0 0 30px 0;
-    clear: both;
-    display: block;
-    position: relative;
+    max-width: 940px;
 }
 h1 {
-    font-size: 3.33em;
-    margin: 0.1em 0 0.1em 0;
+    margin: 0 0 0.25rem 0;
 }
 h2 {
-    font-size: 2em;
-    margin: 0 0 0.2em 0;
-}
-p {
-    font-size: 0.9em;
-    margin: 0.7em 0;
+    margin: 0 0 0.25rem 0;
 }
 p.description {
-    font-size: 1.15em;
+    margin-top: 0.5rem;
     max-width: 900px;
 }
 p.byline {
-    font-size: 0.8em;
-    margin: 0;
+    margin: 0 0 0.5rem 0;
+    font-size: 14px;
 }
-section#maps {
-    clear: both;
-    display: block;
-    position: relative;
-}
-section.cycle {
-    clear: both;
-    display: block;
-    position: relative;
-    padding: 10px 0;
-    margin: 20px 0;
-    border-bottom: 1px solid #e7e7e7;
-}
-section.cycle:first-of-type {
-    margin-top: 0;
-}
-section.cycle:last-of-type {
-    margin-bottom: 0;
-}
-section.leaderboard {
-    clear: both;
-    display: block;
-    position: relative;
-    margin: 0 0 20px 0;
+section.leaderboard p {
+    margin: 0.25em 0;
 }
 section.leaderboard .gop {
     text-decoration: none;
@@ -62,9 +26,6 @@ section.leaderboard .gop {
 section.leaderboard .dem {
     text-decoration: none;
     border-bottom: 2px solid #047BC0;
-}
-svg.map {
-    margin-top: 2em;
 }
 .dropshadow {
   fill: #ddd;
