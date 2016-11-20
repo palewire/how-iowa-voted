@@ -53,6 +53,16 @@ text {
     font-size: 11px;
     pointer-events: none;
 }
+.legend circle {
+    fill: none;
+    stroke: #ccc;
+}
+.legend text {
+    font-family: "Roboto", sans-serif;
+    fill: #777;
+    font-size: 10px;
+    text-anchor: middle;
+}
 .btn {
     margin-bottom: 20px;
 }

@@ -1,6 +1,5 @@
 - [ ] Social media metadata
 - [ ] Hover effects
-- [ ] Bubble key and party legends
 - [ ] ring note annotations
 - [ ] Cloropleth alternative maps you can toggle to
 - [ ] Mini multiples for each candidate

@@ -166,6 +166,32 @@ app.createCities = function (race) {
     race.svg.selectAll(".city-label")
         .attr("dx", function(d) { return d.geometry.coordinates[0] > -93.15 ? "0.4rem" : "-0.4rem"; })
         .style("text-anchor", function(d) { return d.geometry.coordinates[0] > -93.15 ? "start" : "end"; });
+};
+app.createLegend = function (race) {
+    var coordinates = [-90.5, 40.75];
+    var legend = race.svg.append("g")
+        .attr("class", "legend")
+        .attr("transform", "translate(" + app.projection(coordinates) + ")")
+      .selectAll("g")
+        .data([1000, 10000, 30000])
+      .enter().append("g");
+
+    legend.append("circle")
+        .attr("transform", "translate(" + app.projection(coordinates) + ")")
+        .attr("cy", function(d) { return -app.radius(d); })
+        .attr("r", app.radius);
+
+    legend.append("text")
+        .attr("transform", "translate(" + app.projection(coordinates) + ")")
+        .attr("y", function(d) { return -2 * app.radius(d); })
+        .attr("dy", "1.3em")
+        .text(d3.format(".1s"));
+
+        legend.append("text")
+            .attr("transform", "translate(" + app.projection(coordinates) + ")")
+            .attr("y", 0)
+            .attr("dy", "1rem")
+            .text("Margin of victory");
 
 };
 app.createHeadline = function (race) {
@@ -179,6 +205,7 @@ app.createMap = function (race) {
     race.svg = app.createSvg(race);
     app.createBubbles(race);
     app.createCities(race);
+    app.createLegend(race);
     app.fitMaps();
 };
 app.createTable = function (race) {
