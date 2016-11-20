@@ -109,7 +109,7 @@ app.createSvg = function (ele) {
 app.createMap = function (race) {
     var section = d3.select(race.selector);
 
-    var hed = section.append("h2")
+    var hed = section.append("h3")
       .text(race.hed);
 
     var leaderboard = section.append("section")

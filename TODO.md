@@ -1,6 +1,5 @@
 - [ ] City labels
 - [ ] Hover effects
-- [ ] Responsive maps
 - [ ] Mini multiples for each candidate
 - [ ] Corum style squares
 - [ ] Bubble key and party legends

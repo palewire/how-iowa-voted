@@ -2,10 +2,7 @@ article.container {
     margin: 20px auto;
     max-width: 940px;
 }
-h1 {
-    margin: 0 0 0.25rem 0;
-}
-h2 {
+h1, h3 {
     margin: 0 0 0.25rem 0;
 }
 p.description {
