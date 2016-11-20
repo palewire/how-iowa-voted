@@ -44,9 +44,23 @@ section.leaderboard .dem {
 .bubbles .dem {
     fill: #047BC0;
 }
+.city,
+.city-label {
+    fill: #444;
+}
+text {
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    pointer-events: none;
+}
 .btn {
     margin-bottom: 20px;
 }
 table.bordered tr:last-of-type {
     border-bottom: none;
+}
+@media (max-width: 720px) {
+    .city-label, .city {
+        display: none;
+    }
 }

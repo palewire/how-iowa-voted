@@ -1,4 +1,3 @@
-- [ ] City labels
 - [ ] Hover effects
 - [ ] Mini multiples for each candidate
 - [ ] Corum style squares

@@ -141,6 +141,32 @@ app.createBubbles = function (race) {
             return app.radius(county.margin);
         });
 };
+app.createCities = function (race) {
+    race.svg.append("g")
+        .attr("class", "cities")
+      .selectAll(".city")
+        .data(app.json.cities)
+      .enter().append("circle")
+        .attr("transform", function(d) { return "translate(" + app.path.centroid(d) + ")"; })
+        .attr("r", 2)
+        .attr("class", "city")
+        .attr("data-name", function (d) { return d.properties.NAME; });
+
+    race.svg.append("g")
+        .attr("class", "city-labels")
+      .selectAll(".city-label")
+        .data(app.json.cities)
+      .enter().append("text")
+        .attr("class", "city-label")
+        .attr("transform", function(d) { return "translate(" + app.projection(d.geometry.coordinates) + ")"; })
+        .attr("dy", "0.22rem")
+        .text(function(d) { return d.properties.NAME; });
+
+    race.svg.selectAll(".city-label")
+        .attr("dx", function(d) { return d.geometry.coordinates[0] > -93.15 ? "0.4rem" : "-0.4rem"; })
+        .style("text-anchor", function(d) { return d.geometry.coordinates[0] > -93.15 ? "start" : "end"; });
+
+};
 app.createHeadline = function (race) {
     var hed = race.selector.append("h3")
       .text(race.hed);
@@ -151,6 +177,7 @@ app.createHeadline = function (race) {
 app.createMap = function (race) {
     race.svg = app.createSvg(race);
     app.createBubbles(race);
+    app.createCities(race);
     app.fitMaps();
 };
 app.createTable = function (race) {
@@ -178,17 +205,19 @@ app.boot = function () {
     queue()
       .defer(d3.json, "/static/json/iowa-counties.geojson")
       .defer(d3.json, "/static/json/iowa-state.geojson")
+      .defer(d3.json, "/static/json/iowa-cities.geojson")
       .defer(d3.json, "/static/json/2000.json")
       .defer(d3.json, "/static/json/2004.json")
       .defer(d3.json, "/static/json/2008.json")
       .defer(d3.json, "/static/json/2012.json")
       .defer(d3.json, "/static/json/2016.json")
-      .await(function(error, counties, state, results2000, results2004, results2008, results2012, results2016) {
+      .await(function(error, counties, state, cities, results2000, results2004, results2008, results2012, results2016) {
           if (error) throw error;
 
           app.json = {
               counties: counties.features,
-              state: state.features[0]
+              state: state.features[0],
+              cities: cities.features
           };
 
           app.radius = app.createRadius(_.flatten(
