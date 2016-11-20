@@ -67,10 +67,15 @@ app.createRadius = function(values) {
     return radius;
 };
 app.createSvg = function (ele) {
+    var width = 960;
+    var height = 625;
+    var mapRatio = height / width;
+
     var svg = ele.append("svg")
         .attr("class", "map")
-        .attr("width", 960)
-        .attr("height", 625);
+        .attr("width", width)
+        .attr("height", height)
+        .attr("viewBox", "0 0 960 625");
 
     app.addDropShadow(svg);
 
@@ -124,12 +129,12 @@ app.createMap = function (race) {
 };
 app.boot = function () {
     queue()
-      .defer(d3.json, "/static/iowa.json")
-      .defer(d3.json, "/static/2000.json")
-      .defer(d3.json, "/static/2004.json")
-      .defer(d3.json, "/static/2008.json")
-      .defer(d3.json, "/static/2012.json")
-      .defer(d3.json, "/static/2016.json")
+      .defer(d3.json, "/static/json/iowa.json")
+      .defer(d3.json, "/static/json/2000.json")
+      .defer(d3.json, "/static/json/2004.json")
+      .defer(d3.json, "/static/json/2008.json")
+      .defer(d3.json, "/static/json/2012.json")
+      .defer(d3.json, "/static/json/2016.json")
       .await(function(error, topology, results2000, results2004, results2008, results2012, results2016) {
           if (error) throw error;
 

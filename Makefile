@@ -7,9 +7,9 @@ maps:
 	node_modules/.bin/topojson \
 		-p \
 		--id="GEOID" \
-		--projection='d3.geo.mercator()' \
 		--width=960 \
 		--height=600 \
+		--projection="d3.geo.mercator()" \
 		-o data/iowa-counties.json \
 		-- counties=data/iowa-counties.shp
 
