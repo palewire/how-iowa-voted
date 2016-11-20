@@ -1,4 +1,4 @@
-- [ ] Back to GitHub
+- [ ] Bake to GitHub
 - [ ] Social media metadata
 - [ ] Hover effects
 - [ ] Bubble key and party legends
