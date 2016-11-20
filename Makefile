@@ -1,4 +1,4 @@
-.PHONY: data data/iowa-counties.json
+.PHONY: data
 
 results:
 	python data/process.py

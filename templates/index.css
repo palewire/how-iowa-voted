@@ -44,3 +44,9 @@ section.leaderboard .dem {
 .bubbles .dem {
     fill: #047BC0;
 }
+.btn {
+    margin-bottom: 20px;
+}
+table.bordered tr:last-of-type {
+    border-bottom: none;
+}

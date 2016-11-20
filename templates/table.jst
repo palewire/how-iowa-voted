@@ -1,0 +1,26 @@
+<% var lastName = function(x) { var s = x.split(" "); return s[s.length-1]; } %>
+<% var numberWithCommas = function(x) { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); } %>
+<% var toTitleCase = function(str) { if (str.toLowerCase() == "o'brien") { return "O'Brien"; } else { return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}); }} %>
+<center><a class="waves-effect waves-light btn show" id="btn-<%= hed %>">Show more results +</a></center>
+<table class="bordered" id="table-<%= hed %>" style="display:none;">
+    <tr>
+        <th>County</th>
+        <th class="right-align"><%= lastName(dem) %></th>
+        <th class="right-align"><%= lastName(gop) %></th>
+        <th class="right-align">Other</th>
+    </tr>
+    <% _.each(results, function (row, i) { %>
+        <tr>
+            <td><%= toTitleCase(row.name.toLowerCase()) %></td>
+            <td class="right-align"><%= numberWithCommas(row.dem_total) %></td>
+            <td class="right-align"><%= numberWithCommas(row.gop_total) %></td>
+            <td class="right-align"><%= numberWithCommas(row.other_total) %></td>
+        </tr>
+    <% }); %>
+    <tr>
+        <th>Total</td>
+        <th class="right-align"><%= numberWithCommas(dem_total) %></th>
+        <th class="right-align"><%= numberWithCommas(gop_total) %></th>
+        <th class="right-align"><%= numberWithCommas(grand_total-(dem_total+gop_total)) %></th>
+    </tr>
+</table>

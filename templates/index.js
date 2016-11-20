@@ -3,44 +3,63 @@ app.projection = d3.geo.mercator()
   .scale(7000)
   .center([-93.15, 42.15]);
 app.path = d3.geo.path().projection(app.projection);
+app.templates = {
+    leaderboard: _.template(d3.select("#leaderboard-tmpl").html()),
+    table: _.template(d3.select("#table-tmpl").html())
+};
 app.races = {
     2000: {
-        "selector": "#map-2000",
+        "selector":  d3.select("#map-2000"),
         "hed": "2000",
         "dem": "Al Gore",
         "gop": "George W. Bush",
+        "dem_total": 638517,
+        "gop_total": 634373,
+        "grand_total": 1315563,
         "winner": "dem",
         "margin": 4144,
     },
     2004: {
-        "selector": "#map-2004",
+        "selector": d3.select("#map-2004"),
         "hed": "2004",
         "dem": "John Kerry",
         "gop": "George W. Bush",
+        "dem_total": 741898,
+        "gop_total": 751957,
+        "grand_total": 1506908,
         "winner": "gop",
         "margin": 10059,
     },
     2008: {
-        "selector": "#map-2008",
+        "selector": d3.select("#map-2008"),
         "hed": "2008",
         "dem": "Barack Obama",
         "gop": "John McCain",
+        "dem_total": 828940,
+        "gop_total": 682379,
+        "grand_total": 1543965,
         "winner": "dem",
         "margin": 146561,
     },
     2012: {
-        "selector": "#map-2012",
+        "selector": d3.select("#map-2012"),
         "hed": "2012",
         "dem": "Barack Obama",
         "gop": "Mitt Romney",
+        "dem_total": 822544,
+        "gop_total": 730617,
+        "grand_total": 1589899,
         "winner": "dem",
         "margin": 91927,
     },
     2016: {
-        "selector": "#map-2016",
+        "selector": d3.select("#map-2016"),
         "hed": "2016",
         "dem": "Hillary Clinton",
         "gop": "Donald Trump",
+        "dem_total": 650790,
+        "gop_total": 798923,
+        "grand_total": 1542880,
         "winner": "gop",
         "margin": 148133,
     }
@@ -80,8 +99,8 @@ app.createRadius = function(values) {
       .range([0, 30]);
     return radius;
 };
-app.createSvg = function (ele) {
-    var svg = ele.append("svg")
+app.createSvg = function (race) {
+    var svg = race.selector.append("svg")
         .attr("class", "map col s12")
         .attr("width", "100%");
 
@@ -106,19 +125,8 @@ app.createSvg = function (ele) {
 
     return svg;
 };
-app.createMap = function (race) {
-    var section = d3.select(race.selector);
-
-    var hed = section.append("h3")
-      .text(race.hed);
-
-    var leaderboard = section.append("section")
-      .attr("class", "leaderboard")
-      .html(_.template(d3.select("#leaderboard-tmpl").html())(race));
-
-    var svg = app.createSvg(section);
-
-    svg.append("g")
+app.createBubbles = function (race) {
+    race.svg.append("g")
         .attr("class", "bubbles")
       .selectAll("circle")
         .data(app.json.counties)
@@ -132,7 +140,38 @@ app.createMap = function (race) {
             var county = race.results[d.properties.GEOID];
             return app.radius(county.margin);
         });
+};
+app.createHeadline = function (race) {
+    var hed = race.selector.append("h3")
+      .text(race.hed);
+    var leaderboard = race.selector.append("section")
+      .attr("class", "leaderboard")
+      .html(app.templates.leaderboard(race));
+};
+app.createMap = function (race) {
+    race.svg = app.createSvg(race);
+    app.createBubbles(race);
     app.fitMaps();
+};
+app.createTable = function (race) {
+    var table = race.selector.append("section")
+      .attr("class", "table")
+      .html(app.templates.table(race));
+    $("#btn-" + race.hed).click(
+      function () {
+        var that = $(this);
+        var table = $("#table-" + race.hed);
+        if (that.hasClass("show")) {
+          that.removeClass("show");
+          that.text("Show fewer results -");
+          table.show();
+        } else {
+          that.addClass("show");
+          that.text("Show more results +");
+          table.hide();
+        }
+      }
+    );
 };
 app.boot = function () {
     d3.select(window).on("resize", app.fitMaps);
@@ -166,10 +205,22 @@ app.boot = function () {
           app.races[2012].results = results2012;
           app.races[2016].results = results2016;
 
+          app.createHeadline(app.races[2016]);
+          app.createHeadline(app.races[2012]);
+          app.createHeadline(app.races[2008]);
+          app.createHeadline(app.races[2004]);
+          app.createHeadline(app.races[2000]);
+
           app.createMap(app.races[2016]);
           app.createMap(app.races[2012]);
           app.createMap(app.races[2008]);
           app.createMap(app.races[2004]);
           app.createMap(app.races[2000]);
+
+          app.createTable(app.races[2016]);
+          app.createTable(app.races[2012]);
+          app.createTable(app.races[2008]);
+          app.createTable(app.races[2004]);
+          app.createTable(app.races[2000]);
       });
 };
