@@ -29,9 +29,7 @@
             <section id="map-2004" class="cycle section"></section>
             <section id="map-2000" class="cycle section"></section>
         </section>
-        <section id="sources">
-            <p>Sources: <a href="http://www.openelections.net/">OpenElections</a>, <a href="https://sos.iowa.gov/elections/results/index.html">Iowa Secretary of State</a>, <a href="http://www.census.gov/">U.S. Census</a></p>
-        </section>
+        <section id="sources"></section>
     </article>
     <script src="static/js/jquery-3.1.1.min.js"></script>
     <script src="static/js/underscore-min.js"></script>
@@ -43,6 +41,9 @@
     </script>
     <script id="table-tmpl" type="template/jst">
         {% include "table.jst" %}
+    </script>
+    <script id="sources-tmpl" type="template/jst">
+        {% include "sources.jst" %}
     </script>
     <script type="text/javascript">
         {% include "index.js" %}

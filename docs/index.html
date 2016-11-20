@@ -67,6 +67,9 @@ text {
 table.bordered tr:last-of-type {
     border-bottom: none;
 }
+section#sources p {
+    margin-top: 0;
+}
 @media (max-width: 720px) {
     .city-label, .city {
         display: none;
@@ -94,9 +97,7 @@ table.bordered tr:last-of-type {
             <section id="map-2004" class="cycle section"></section>
             <section id="map-2000" class="cycle section"></section>
         </section>
-        <section id="sources">
-            <p>Sources: <a href="http://www.openelections.net/">OpenElections</a>, <a href="https://sos.iowa.gov/elections/results/index.html">Iowa Secretary of State</a>, <a href="http://www.census.gov/">U.S. Census</a></p>
-        </section>
+        <section id="sources"></section>
     </article>
     <script src="static/js/jquery-3.1.1.min.js"></script>
     <script src="static/js/underscore-min.js"></script>
@@ -141,6 +142,9 @@ table.bordered tr:last-of-type {
     </tr>
 </table>
     </script>
+    <script id="sources-tmpl" type="template/jst">
+        <p>Sources: <a href="http://www.openelections.net/">OpenElections</a>, <a href="https://sos.iowa.gov/elections/results/index.html">Iowa Secretary of State</a>, <a href="http://www.census.gov/">U.S. Census</a></p>
+    </script>
     <script type="text/javascript">
         var app = {};
 app.projection = d3.geo.mercator()
@@ -149,7 +153,8 @@ app.projection = d3.geo.mercator()
 app.path = d3.geo.path().projection(app.projection);
 app.templates = {
     leaderboard: _.template(d3.select("#leaderboard-tmpl").html()),
-    table: _.template(d3.select("#table-tmpl").html())
+    table: _.template(d3.select("#table-tmpl").html()),
+    sources: _.template(d3.select("#sources-tmpl").html())
 };
 app.races = {
     2000: {
@@ -346,6 +351,10 @@ app.createTable = function (race) {
     race.selector.append("div")
       .attr("class", "divider");
 };
+app.createSources = function () {
+    d3.select("section#sources")
+      .html(app.templates.sources());
+};
 app.boot = function () {
     d3.select(window).on("resize", app.fitMaps);
     queue()
@@ -397,6 +406,8 @@ app.boot = function () {
           app.createTable(app.races[2008]);
           app.createTable(app.races[2004]);
           app.createTable(app.races[2000]);
+
+          app.createSources();
       });
 };
         app.boot();

@@ -5,7 +5,8 @@ app.projection = d3.geo.mercator()
 app.path = d3.geo.path().projection(app.projection);
 app.templates = {
     leaderboard: _.template(d3.select("#leaderboard-tmpl").html()),
-    table: _.template(d3.select("#table-tmpl").html())
+    table: _.template(d3.select("#table-tmpl").html()),
+    sources: _.template(d3.select("#sources-tmpl").html())
 };
 app.races = {
     2000: {
@@ -202,6 +203,10 @@ app.createTable = function (race) {
     race.selector.append("div")
       .attr("class", "divider");
 };
+app.createSources = function () {
+    d3.select("section#sources")
+      .html(app.templates.sources());
+};
 app.boot = function () {
     d3.select(window).on("resize", app.fitMaps);
     queue()
@@ -253,5 +258,7 @@ app.boot = function () {
           app.createTable(app.races[2008]);
           app.createTable(app.races[2004]);
           app.createTable(app.races[2000]);
+
+          app.createSources();
       });
 };
