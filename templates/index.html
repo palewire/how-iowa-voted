@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How Iowa voted</title>
     <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection"/>
-    <style type="text/css">
-        {% include "index.css" %}
-    </style>
+    <link type="text/css" rel="stylesheet" href="static/css/app.css"  media="screen,projection"/>
 </head>
 <body>
     <article class="container">
@@ -31,11 +29,11 @@
         </section>
         <section id="sources"></section>
     </article>
-    <script src="static/js/jquery-3.1.1.min.js"></script>
-    <script src="static/js/underscore-min.js"></script>
-    <script src="static/js/d3.v3.min.js"></script>
-    <script src="static/js/topojson.v1.min.js"></script>
-    <script src="static/js/queue.v1.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="static/js/underscore-min.js"></script>
+    <script type="text/javascript" src="static/js/d3.v3.min.js"></script>
+    <script type="text/javascript" src="static/js/topojson.v1.min.js"></script>
+    <script type="text/javascript" src="static/js/queue.v1.min.js"></script>
     <script id="leaderboard-tmpl" type="template/jst">
         {% include "leaderboard.jst" %}
     </script>
@@ -45,8 +43,8 @@
     <script id="sources-tmpl" type="template/jst">
         {% include "sources.jst" %}
     </script>
+    <script type="text/javascript" src="static/js/app.js"></script>
     <script type="text/javascript">
-        {% include "index.js" %}
         app.boot();
     </script>
 </body>
