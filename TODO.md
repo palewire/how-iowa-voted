@@ -5,3 +5,5 @@
 - [ ] Cloropleth alternative maps you can toggle to
 - [ ] Mini multiples for each candidate
 - [ ] Corum style squares
+- [ ] Link to code
+- [ ] Link to CSV files
