@@ -36,7 +36,7 @@ section.leaderboard .dem {
     stroke-width: .25px;
 }
 .bubbles circle {
-    fill-opacity: .6;
+    fill-opacity: .70;
 }
 .bubbles .gop {
     fill: #DC4E54;
@@ -60,8 +60,11 @@ text {
 .legend text {
     font-family: "Roboto", sans-serif;
     fill: #777;
-    font-size: 10px;
+    font-size: 9px;
     text-anchor: middle;
+}
+text.legend-title {
+    font-size: 10px;
 }
 .btn {
     margin-bottom: 20px;

@@ -97,12 +97,12 @@ app.createRadius = function(values) {
     var maxVotes = d3.max(values, function (d) { return d.margin; });
     var radius = d3.scale.sqrt()
       .domain([0, maxVotes])
-      .range([0, 30]);
+      .range([0, 25]);
     return radius;
 };
 app.createSvg = function (race) {
     var svg = race.selector.append("svg")
-        .attr("class", "map col s12")
+        .attr("class", "map")
         .attr("width", "100%");
 
     app.addDropShadow(svg);
@@ -164,8 +164,24 @@ app.createCities = function (race) {
         .text(function(d) { return d.properties.NAME; });
 
     race.svg.selectAll(".city-label")
-        .attr("dx", function(d) { return d.geometry.coordinates[0] > -93.15 ? "0.4rem" : "-0.4rem"; })
-        .style("text-anchor", function(d) { return d.geometry.coordinates[0] > -93.15 ? "start" : "end"; });
+        .attr("dx", function(d) {
+            if (d.properties.NAME == 'Davenport') {
+                return "-0.4em";
+            }
+            if (d.properties.NAME == 'Cedar Rapids') {
+                return "-0.4em";
+            }
+            return d.geometry.coordinates[0] > -93.15 ? "0.4rem" : "-0.4rem";
+        })
+        .style("text-anchor", function(d) {
+            if (d.properties.NAME == 'Davenport') {
+                return "end";
+            }
+            if (d.properties.NAME == 'Cedar Rapids') {
+                return "end";
+            }
+            return d.geometry.coordinates[0] > -93.15 ? "start" : "end";
+        });
 };
 app.createLegend = function (race) {
     var coordinates = [-90.5, 40.75];
@@ -174,7 +190,7 @@ app.createLegend = function (race) {
         .attr("transform", "translate(" + app.projection(coordinates) + ")")
       .selectAll("g")
         .data([1000, 10000, 30000])
-      .enter().append("g");
+      .enter();
 
     legend.append("circle")
         .attr("transform", "translate(" + app.projection(coordinates) + ")")
@@ -187,11 +203,12 @@ app.createLegend = function (race) {
         .attr("dy", "1.3em")
         .text(d3.format(".1s"));
 
-        legend.append("text")
-            .attr("transform", "translate(" + app.projection(coordinates) + ")")
-            .attr("y", 0)
-            .attr("dy", "1rem")
-            .text("Margin of victory");
+    race.svg.select(".legend").append("text")
+        .attr("transform", "translate(" + app.projection(coordinates) + ")")
+        .attr("y", 0)
+        .attr("dy", "1rem")
+        .attr("class", "legend-title")
+        .text("Margin of victory");
 
 };
 app.createHeadline = function (race) {

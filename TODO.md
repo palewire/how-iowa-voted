@@ -1,4 +1,3 @@
-- [ ] Responsive bubble legend
 - [ ] Social media metadata
 - [ ] Hover effects
 - [ ] ring note annotations
