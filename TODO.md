@@ -1,3 +1,4 @@
+- [ ] Reverse out the winner's numbers in the tables
 - [ ] Social media metadata
 - [ ] Hover effects
 - [ ] ring note annotations
