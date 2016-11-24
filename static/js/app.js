@@ -5,6 +5,7 @@ app.projection = d3.geo.mercator()
 app.path = d3.geo.path().projection(app.projection);
 app.templates = {
     headline: _.template(d3.select("#headline-tmpl").html()),
+    resultcards: _.template(d3.select("#resultcards-tmpl").html()),
     table: _.template(d3.select("#table-tmpl").html()),
     sources: _.template(d3.select("#sources-tmpl").html())
 };
@@ -14,6 +15,8 @@ app.races = {
         "hed": "2000",
         "dem": "Al Gore",
         "gop": "George W. Bush",
+        "dem_img": "gore.jpg",
+        "gop_img": "bush.jpg",
         "dem_total": 638517,
         "gop_total": 634373,
         "grand_total": 1315563,
@@ -25,6 +28,8 @@ app.races = {
         "hed": "2004",
         "dem": "John Kerry",
         "gop": "George W. Bush",
+        "dem_img": "kerry.jpg",
+        "gop_img": "bush.jpg",
         "dem_total": 741898,
         "gop_total": 751957,
         "grand_total": 1506908,
@@ -36,6 +41,8 @@ app.races = {
         "hed": "2008",
         "dem": "Barack Obama",
         "gop": "John McCain",
+        "dem_img": "obama.jpg",
+        "gop_img": "mccain.jpg",
         "dem_total": 828940,
         "gop_total": 682379,
         "grand_total": 1543965,
@@ -47,6 +54,8 @@ app.races = {
         "hed": "2012",
         "dem": "Barack Obama",
         "gop": "Mitt Romney",
+        "dem_img": "obama.jpg",
+        "gop_img": "romney.jpg",
         "dem_total": 822544,
         "gop_total": 730617,
         "grand_total": 1589899,
@@ -58,6 +67,8 @@ app.races = {
         "hed": "2016",
         "dem": "Hillary Clinton",
         "gop": "Donald Trump",
+        "dem_img": "clinton.jpg",
+        "gop_img": "trump.jpg",
         "dem_total": 650790,
         "gop_total": 798923,
         "grand_total": 1542880,
@@ -218,6 +229,11 @@ app.createHeadline = function (race) {
       .attr("class", "headline")
       .html(app.templates.headline(race));
 };
+app.createResultCards = function (race) {
+    var resultcards = race.selector.append("section")
+      .attr("class", "resultcards")
+      .html(app.templates.resultcards(race));
+};
 app.createMap = function (race) {
     race.svg = app.createSvg(race);
     app.createBubbles(race);
@@ -296,6 +312,12 @@ app.boot = function () {
           app.createMap(app.races[2008]);
           app.createMap(app.races[2004]);
           app.createMap(app.races[2000]);
+
+          app.createResultCards(app.races[2016]);
+          app.createResultCards(app.races[2012]);
+          app.createResultCards(app.races[2008]);
+          app.createResultCards(app.races[2004]);
+          app.createResultCards(app.races[2000]);
 
           app.createTable(app.races[2016]);
           app.createTable(app.races[2012]);

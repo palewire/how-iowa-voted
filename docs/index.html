@@ -34,7 +34,7 @@
     <script type="text/javascript" src="static/js/d3.v3.min.js"></script>
     <script type="text/javascript" src="static/js/topojson.v1.min.js"></script>
     <script type="text/javascript" src="static/js/queue.v1.min.js"></script>
-    <script id="leaderboard-tmpl" type="template/jst">
+    <script id="headline-tmpl" type="template/jst">
         <% var numberWithCommas = function(x) { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); } %>
 <p class="flow-text">
 <% if (winner == 'dem') { %>
@@ -43,6 +43,42 @@
     <span class="gop"><%= gop %></span> defeated <span class="dem"><%= dem %></span> by <%= numberWithCommas(margin) %> votes
 <% } %>
 </p>
+    </script>
+    <script id="resultcards-tmpl" type="template/jst">
+        <% var numberWithCommas = function(x) { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); } %>
+<% var percentage = function(total) { var val = total / grand_total; return Math.round((val*100)*10)/10; } %>
+<section class="row">
+    <div class="col s12 m6">
+        <section class="card horizontal">
+          <div class="card-image">
+            <img src="static/img/<%= dem_img %>">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <span class="card-title dem"><%= dem %> (D)</span>
+            </div>
+            <div class="card-action">
+              <span class="percentage"><%= percentage(dem_total) %>%</span> <span class="votes"><%= numberWithCommas(dem_total) %> votes</span>
+            </div>
+          </div>
+        </section>
+    </div>
+    <div class="col s12 m6">
+        <section class="card horizontal">
+          <div class="card-image">
+            <img src="static/img/<%= gop_img %>">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <span class="card-title gop"><%= gop %> (R)</span>
+            </div>
+            <div class="card-action">
+              <span class="percentage"><%= percentage(gop_total) %>%</span> <span class="votes"><%= numberWithCommas(gop_total) %> votes</span>
+            </div>
+          </div>
+        </section>
+    </div>
+</section>
     </script>
     <script id="table-tmpl" type="template/jst">
         <% var lastName = function(x) { var s = x.split(" "); return s[s.length-1]; } %>

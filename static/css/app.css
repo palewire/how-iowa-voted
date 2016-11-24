@@ -16,13 +16,27 @@ p.byline {
 section.headline p {
     margin: 0.25em 0;
 }
-section.headline .gop {
+section.headline .gop,
+section.card .gop {
     text-decoration: none;
     border-bottom: 2px solid #DC4E54;
 }
-section.headline .dem {
+section.headline .dem,
+section.card .dem {
     text-decoration: none;
     border-bottom: 2px solid #047BC0;
+}
+section.card .card-image img {
+}
+section.card .card-content {
+    padding: 3px 20px;
+}
+section.card .card-content {
+    padding: 3px 20px;
+}
+section.card .percentage {
+    font-size: 1.3rem;
+    margin-right: 5px;
 }
 .dropshadow {
   fill: #ddd;
@@ -75,8 +89,27 @@ table.bordered tr:last-of-type {
 section#sources p {
     margin-top: 0;
 }
+@media (max-width: 1000px) {
+    section.card .card-title {
+        font-size: 20px;
+    }
+}
 @media (max-width: 720px) {
     .city-label, .city {
         display: none;
+    }
+    section.card .card-image {
+        display: none;
+    }
+}
+@media (max-width: 420px) {
+    section.card .card-title {
+        font-size: 16px;
+    }
+    section.card .percentage {
+        font-size: 14px;
+    }
+    section.card .votes {
+        font-size: 12px;
     }
 }
