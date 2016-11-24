@@ -20,6 +20,16 @@
                 Results from Iowa's 99 counties in the last five presidential elections
             </p>
         </header>
+        <section id="controls">
+            <div class="switch">
+                <label>
+                  Fills
+                  <input id="viz-type-checkbox" type="checkbox" checked>
+                  <span class="lever"></span>
+                  Bubbles
+                </label>
+            </div>
+        </section>
         <section id="maps">
             <section id="map-2016" class="cycle section"></section>
             <section id="map-2012" class="cycle section"></section>
@@ -84,6 +94,7 @@
         <% var lastName = function(x) { var s = x.split(" "); return s[s.length-1]; } %>
 <% var numberWithCommas = function(x) { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); } %>
 <% var toTitleCase = function(str) { if (str.toLowerCase() == "o'brien") { return "O'Brien"; } else { return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}); }} %>
+
 <center><a class="waves-effect waves-light btn show" id="btn-<%= hed %>">Show more results +</a></center>
 <table class="bordered" id="table-<%= hed %>" style="display:none;">
     <tr>
