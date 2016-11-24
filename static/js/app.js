@@ -9,6 +9,18 @@ app.templates = {
     table: _.template(d3.select("#table-tmpl").html()),
     sources: _.template(d3.select("#sources-tmpl").html())
 };
+app.blue = "#047BC0";
+app.red = "#DC4E54";
+app.color = d3.scale.threshold()
+    .domain([0, 0.4, 0.45, 0.50, 0.55, 0.6, 1])
+    .range([
+        "#F4C2C2", // Baby pink
+        "#FF5C5C", // Indian red
+        "#FF5C5C", // Red
+        "#047BC0", // Blue
+        "#92A1CF", // Ceil
+        "#CCCCFF", // Lavender blue
+    ]);
 app.races = {
     2000: {
         "selector":  d3.select("#map-2000"),
@@ -138,6 +150,8 @@ app.createSvg = function (race) {
     return svg;
 };
 app.createBubbles = function (race) {
+    race.svg.selectAll(".county")
+      .attr("fill", "#f8f8f8");
     race.svg.append("g")
         .attr("class", "bubbles")
       .selectAll("circle")
@@ -267,6 +281,48 @@ app.createSources = function () {
     d3.select("section#sources")
       .html(app.templates.sources());
 };
+app.createSections = function () {
+    _.each(app.races, function (list, year) {
+        var race = app.races[year];
+        app.createHeadline(race);
+        app.createMap(race);
+        app.createResultCards(race);
+        app.createTable(race);
+    });
+};
+app.showFills = function () {
+    _.each(app.races, function (list, year) {
+        var race = app.races[year];
+        race.svg.select(".bubbles")
+          .selectAll("circle")
+          .style("fill-opacity", 0);
+        race.svg.selectAll(".county")
+          .attr("fill", function(d) {
+            var result = race.results[d.properties.GEOID];
+            return result.leader == 'dem' ? app.blue: app.red;
+          })
+          .attr("fill-opacity", 0.7);
+    });
+};
+app.showBubbles = function () {
+    _.each(app.races, function (list, year) {
+        var race = app.races[year];
+        race.svg.selectAll(".county")
+          .attr("fill", "#f8f8f8");
+          race.svg.select(".bubbles")
+            .selectAll("circle")
+            .style("fill-opacity", 0.7);
+    });
+};
+app.toggleType = function () {
+    var box = d3.select('#viz-type-checkbox');
+    var isChecked = box.property('checked');
+    if (isChecked) {
+        app.showBubbles();
+    } else {
+        app.showFills();
+    }
+};
 app.boot = function () {
     d3.select(window).on("resize", app.fitMaps);
     queue()
@@ -301,30 +357,9 @@ app.boot = function () {
           app.races[2012].results = results2012;
           app.races[2016].results = results2016;
 
-          app.createHeadline(app.races[2016]);
-          app.createHeadline(app.races[2012]);
-          app.createHeadline(app.races[2008]);
-          app.createHeadline(app.races[2004]);
-          app.createHeadline(app.races[2000]);
-
-          app.createMap(app.races[2016]);
-          app.createMap(app.races[2012]);
-          app.createMap(app.races[2008]);
-          app.createMap(app.races[2004]);
-          app.createMap(app.races[2000]);
-
-          app.createResultCards(app.races[2016]);
-          app.createResultCards(app.races[2012]);
-          app.createResultCards(app.races[2008]);
-          app.createResultCards(app.races[2004]);
-          app.createResultCards(app.races[2000]);
-
-          app.createTable(app.races[2016]);
-          app.createTable(app.races[2012]);
-          app.createTable(app.races[2008]);
-          app.createTable(app.races[2004]);
-          app.createTable(app.races[2000]);
-
+          app.createSections();
           app.createSources();
+
+          d3.select("#viz-type-checkbox").on("click", app.toggleType);
       });
 };

@@ -7,3 +7,5 @@
 - [ ] Corum style squares
 - [ ] Link to code
 - [ ] Link to CSV files
+- [ ] Pretty up type switch toggle
+- [ ] Also toggle key when you click over to fills

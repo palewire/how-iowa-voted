@@ -45,7 +45,6 @@ section.card .percentage {
   filter: url(#drop-shadow);
 }
 .county {
-    fill: #f8f8f8;
     stroke: #c7c7c7;
     stroke-width: .25px;
 }

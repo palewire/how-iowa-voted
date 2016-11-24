@@ -1,6 +1,7 @@
 <% var lastName = function(x) { var s = x.split(" "); return s[s.length-1]; } %>
 <% var numberWithCommas = function(x) { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); } %>
 <% var toTitleCase = function(str) { if (str.toLowerCase() == "o'brien") { return "O'Brien"; } else { return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}); }} %>
+
 <center><a class="waves-effect waves-light btn show" id="btn-<%= hed %>">Show more results +</a></center>
 <table class="bordered" id="table-<%= hed %>" style="display:none;">
     <tr>
