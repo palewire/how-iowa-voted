@@ -4,7 +4,7 @@ app.projection = d3.geo.mercator()
   .center([-93.15, 42.15]);
 app.path = d3.geo.path().projection(app.projection);
 app.templates = {
-    leaderboard: _.template(d3.select("#leaderboard-tmpl").html()),
+    headline: _.template(d3.select("#headline-tmpl").html()),
     table: _.template(d3.select("#table-tmpl").html()),
     sources: _.template(d3.select("#sources-tmpl").html())
 };
@@ -215,8 +215,8 @@ app.createHeadline = function (race) {
     var hed = race.selector.append("h3")
       .text(race.hed);
     var leaderboard = race.selector.append("section")
-      .attr("class", "leaderboard")
-      .html(app.templates.leaderboard(race));
+      .attr("class", "headline")
+      .html(app.templates.headline(race));
 };
 app.createMap = function (race) {
     race.svg = app.createSvg(race);

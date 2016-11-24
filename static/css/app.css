@@ -13,14 +13,14 @@ p.byline {
     margin: 0 0 0.5rem 0;
     font-size: 14px;
 }
-section.leaderboard p {
+section.headline p {
     margin: 0.25em 0;
 }
-section.leaderboard .gop {
+section.headline .gop {
     text-decoration: none;
     border-bottom: 2px solid #DC4E54;
 }
-section.leaderboard .dem {
+section.headline .dem {
     text-decoration: none;
     border-bottom: 2px solid #047BC0;
 }
