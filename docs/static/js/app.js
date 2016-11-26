@@ -360,6 +360,6 @@ app.boot = function () {
           app.createSections();
           app.createSources();
 
-          d3.select("#viz-type-checkbox").on("click", app.toggleType);
+          $("#viz-type-checkbox").change(app.toggleType);
       });
 };
