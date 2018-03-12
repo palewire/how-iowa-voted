@@ -9,3 +9,6 @@
 - [ ] Link to CSV files
 - [ ] Pretty up type switch toggle
 - [ ] Also toggle key when you click over to fills
+- [ ] Checkmark for the winner in their card
+- [ ] Update 2016 results data to final tally
+- [ ] Add 1996 results
