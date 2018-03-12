@@ -1,14 +1,12 @@
 - [ ] Reverse out the winner's numbers in the tables
 - [ ] Social media metadata
 - [ ] Hover effects
-- [ ] ring note annotations
-- [ ] Cloropleth alternative maps you can toggle to
 - [ ] Mini multiples for each candidate
 - [ ] Corum style squares
 - [ ] Link to code
 - [ ] Link to CSV files
-- [ ] Pretty up type switch toggle
 - [ ] Also toggle key when you click over to fills
 - [ ] Checkmark for the winner in their card
 - [ ] Update 2016 results data to final tally
 - [ ] Add 1996 results
+- [ ] More padding between the sections
